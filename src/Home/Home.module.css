@@ -1,0 +1,122 @@
+.scheduleTable th,td,tr{
+    
+    padding: 10px;
+    text-align: left;
+    border-collapse: collapse;
+    
+} 
+.tableContainer{
+    white-space: nowrap;
+    /* margin: 25%; */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.scheduleTable{
+    width: 95%;
+    
+    
+}
+.scheduleTable tr:nth-child(2n){
+
+    background: #f5f5f5f5;
+   
+}
+
+span{
+    text-align: center;
+}
+.tableFirstRow:first-child{
+    background: #19398a;
+    border-spacing: 0;
+    color: white;
+}
+
+.shadowTable {
+    box-shadow: 3px 0 2px 0 hsl(0deg 0% 75% / 40%);
+
+}
+.leadersContainer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 100px;
+    
+   
+}
+
+.playerOneContainer,.playerTwoContainer,.playerThreeContainer{
+    
+    border-radius: 10px;
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 10%);
+    
+}
+
+.playerOneContainer{
+    background: linear-gradient(to right, #f12711, #f5af19);
+}
+
+.playerTwoContainer{
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+.playerThreeContainer{
+    background: linear-gradient(to right, #0575e6, #021b79);
+}
+
+.awardOneContainer,.awardFourContainer{
+    background-color: #f12711;
+   
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.awardTwoContainer,.awardFiveContainer{
+    background-color: #8e2de2;
+   
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.awardThreeContainer,.awardSixContainer{
+    background-color: #0575e6;
+    
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.awardOne,.awardTwo,.awardThree,.awardFour,.awardFive,.awardSix{
+   
+    
+    
+    color: white;
+}
+
+.playerOneInfo{
+    background-color: white;
+    text-align: center;
+    
+}
+.stylingName{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+}
+.stylingDigit{
+    font-weight: bold;
+    font-size: 40px;
+}
+.stylingText{
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: grey;
+}

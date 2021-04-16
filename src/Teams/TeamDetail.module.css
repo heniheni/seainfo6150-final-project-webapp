@@ -1,0 +1,65 @@
+.logoStyling{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+}
+.mainContainer{
+    background: linear-gradient(160deg,  #0082c8,#667db6);
+    margin: 8px;
+    border-radius: 8px;
+    /* box-shadow: inset 0px 0px 20px 0px black; */
+    
+} 
+.teamInfo{
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+}
+.teamDescription{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+.teamNameStyling{
+    color:white;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 15px;
+}
+.subContainer{
+margin: 20px;
+}
+
+.valueStyling{
+    color:white;
+    font-size: 20px;
+    font-family: Patua One;
+}
+.fields{
+    padding-right: 15px;
+    color:white;
+    font-size: 18px;
+    font-family: Patua One;
+}
+
+.contentOne{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    margin-top: 20px;
+    
+}
+
+.contentTwo{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    
+}
+.contentThree{
+    margin-top: 20px;
+  line-height: 30px;
+  padding: 20px;
+   color: white;
+   text-align: justify;
+   font-family: Patua One;
+  
+}

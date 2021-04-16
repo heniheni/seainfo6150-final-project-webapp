@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "PatuaOne-Regular", sans-serif;
+  src: url("./Fonts/PatuaOne-Regular.ttf") format("truetype");
+}
+.mainContainer {
+  display: block;
+  cursor: pointer;
+}
+.headerContainer {
+  background-image: linear-gradient(
+    90deg,
+    #19398a 12%,
+    #1b4c92 50%,
+    #19398a 89%
+  );
+  border-bottom: 2px solid #ef4123;
+  /* background-color: #3867d6; */
+}
+
+.navContainer {
+  display: flex;
+}
+
+.logoBox {
+  height: 80px;
+  width: 160px;
+}
+
+.listControl {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  width: 100%;
+}
+a {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Patua One', sans-serif;
+}
+
+footer {
+  padding: 1rem;
+  /* background-color: rgb(235, 195, 64); */
+  background: linear-gradient(
+    90deg,
+    #061d42 0,
+    #061d42 30%,
+    #19398a 50%,
+    #061d42 70%,
+    #061d42
+  );
+  border-top: 2px solid #ef4123;
+ 
+  position: fixed;  
+  bottom: 0;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.footerLink {
+  float: right;
+  padding-right: 30px;
+  color: white;
+  font-weight: bold;
+  font-family: monospace;
+  text-decoration: none;
+}

@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap");
+
+@font-face {
+  font-family: "Prompt-Light", sans-serif;
+  src: url(../Fonts/Prompt-Light.ttf);
+}
+
+.teamOneContainer {
+    margin-top: 20px ;
+    padding:20px 10px 40px 10px;
+  background: linear-gradient(136deg, #f12711, #f5af19);
+  flex-flow: column;
+  display: flex;
+  height: 300px;
+  width: 300px;
+  border-radius: 8px;
+}
+.stylingLogo {
+  align-self: center;
+  height: 100px;
+  width: 100px;
+}
+.stylingTeamName {
+  align-self: center;
+  color: white;
+  font-size: 2.2rem;
+  text-align: center;
+}
+.stylingVenue {
+  color: white;
+  align-self: center;
+  margin-top: 15px;
+  font-family: "Prompt-Light", sans-serif;
+  letter-spacing: 2px;
+}
+.styleWonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 30px;
+  border-radius: 20px;
+  margin: 10px 45px 20px 45px;
+}
+.stylingWon {
+  color: yellow;
+}
+.teamDetailContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+   
+}
+.stylingLink{
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+    
+}
