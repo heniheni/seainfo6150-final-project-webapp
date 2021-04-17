@@ -22,7 +22,9 @@
   border-bottom: 2px solid #ef4123;
   /* background-color: #3867d6; */
 }
-
+.centerArea{
+  margin-bottom: 50px;
+}
 .navContainer {
   display: flex;
 }

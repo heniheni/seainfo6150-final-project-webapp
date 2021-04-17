@@ -12,6 +12,7 @@ import Teams from "./Teams/Teams.jsx";
 import Form from "./FeedBackForm/FeedBackForm.jsx";
 import TeamDetail from "./Teams/TeamDetail.jsx";
 import AboutUs from "./AboutUs/AboutUs.jsx";
+import News from "./News/News";
 
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
@@ -56,7 +57,7 @@ function App() {
               <Link to="/Teams">Teams</Link>
             </li>
             <li>
-              <Link to="/bar/hats/sombrero">News</Link>
+              <Link to="/News">News</Link>
             </li>
             <li>
               <Link to="/AboutUs">About Us</Link>
@@ -72,13 +73,19 @@ function App() {
         </nav>
       </header>
       </div>
+      
       {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
+            <div className={styles.centerArea}>
+
+            
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/teamdetail" exact component={TeamDetail}/>
+        
         {/* <Route path="/foo" exact component={Foo} /> */}
         <Route path="/form" exact component={Form} />
+        <Route path="/news" exact component={News} />
         <Route path="/aboutus" exact component={AboutUs} />
         <Route path="/teams" exact component={Teams} >
 
@@ -116,9 +123,14 @@ function App() {
             /> : null
           }}
         />
+
+        
+
+
       
         <Route component={Error} />
       </Switch>
+      </div>
       <footer>
         	&#9400; 2021 Heni Bhungalia
         <Link className={styles.footerLink} to="/baz">Contact Us</Link>

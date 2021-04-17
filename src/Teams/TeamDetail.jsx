@@ -3,6 +3,19 @@ import styles from "./TeamDetail.module.css";
 import bcci from "../images/bcci.png";
 
 const TeamDetail = (props) => {
+    let SquadList;
+
+    if (props.team.squad.length) {
+        SquadList = (
+          <div className={styles.listingMainContainer}>
+            {props.team.squad.map((playername) => (
+              <div className={styles.listingName}>{playername}</div>
+            ))}
+          </div>
+        );
+      } else {
+        SquadList = <div>You have no data!</div>;
+    }
   //const image1 = require(props.team.teamLogoUrl);
   return (
     <div>
@@ -45,8 +58,25 @@ const TeamDetail = (props) => {
                         </p>
                     </div>
                 </div>
+
+                
+               
             </div>
+           
       </div>
+      <div>
+            <div>
+                <h2 className={styles.stylingSquadHeader}>SquadList</h2>
+            </div>
+          
+            <div>
+                <ul>
+
+                    <li >{SquadList}</li>
+                </ul>
+            </div>
+        </div>
+      
     </div>
   );
 };
