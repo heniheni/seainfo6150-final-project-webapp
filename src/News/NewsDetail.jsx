@@ -14,7 +14,7 @@ const NewsDetail = (props) => {
            <div>
              <h1 className={styles.stylingTitle}>{props.newsDetail.title}</h1>
              <div className={styles.stylingDate}>
-                    <time >{props.newsDetail.datePublished}</time>
+                    <time dateTime={props.newsDetail.datetime} >{props.newsDetail.datePublished}</time>
                   </div>
            </div>
            <div className={styles.coverContainer}>

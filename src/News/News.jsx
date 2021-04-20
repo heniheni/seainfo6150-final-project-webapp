@@ -24,7 +24,7 @@ const News = (props) => {
                   </div>
 
                   <div className={styles.stylingDate}>
-                    <time>{news.datePublished}</time>
+                    <time dateTime={news.datetime}>{news.datePublished}</time>
                   </div>
                 </div>
               </article>
