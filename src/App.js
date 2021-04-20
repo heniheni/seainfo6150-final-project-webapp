@@ -11,8 +11,11 @@ import ipl from "../src/ipl.png";
 import Teams from "./Teams/Teams.jsx";
 import Form from "./FeedBackForm/FeedBackForm.jsx";
 import TeamDetail from "./Teams/TeamDetail.jsx";
+import ContactUs from "./ContactUs/ContactUs.jsx";
+import News from "./News/News.jsx";
+import NewsDetail from "./News/NewsDetail.jsx";
 import AboutUs from "./AboutUs/AboutUs.jsx";
-import News from "./News/News";
+
 
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
@@ -25,6 +28,7 @@ const externalContent = {
 
 function App() {
   const [fetchedData, setFetchedData] = useState();
+  const [fetchedNews, setFetchedNews] = useState();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -37,7 +41,20 @@ function App() {
     if (isEmpty(fetchedData)) {
       fetchData();
     }
-  }, [fetchedData]);
+
+    const fetchNews = async () => {
+      // performs a GET request
+      const responseNews = await fetch("http://localhost:8000/News");
+      const responseNewsJson = await responseNews.json();
+      setFetchedNews(responseNewsJson);
+    };
+
+    if (isEmpty(fetchedNews)) {
+      fetchNews();
+    }
+  }, [fetchedData,fetchedNews]);
+
+
 
   return  (
     <div className={styles.mainContainer}>
@@ -51,22 +68,24 @@ function App() {
           <ul className={styles.listControl}>
             {/* these links should show you how to connect up a link to a specific route */}
             <li>
-              <Link to="/">Home</Link>
+              <Link className={styles.stylingLink} to="/">Home</Link>
             </li>
             <li>
-              <Link to="/Teams">Teams</Link>
+              <Link className={styles.stylingLink} to="/Teams">Teams</Link>
             </li>
             <li>
-              <Link to="/News">News</Link>
+              <Link className={styles.stylingLink} to="/News">News</Link>
             </li>
             <li>
-              <Link to="/AboutUs">About Us</Link>
+              <Link className={styles.stylingLink} to="/AboutUs">About Us</Link>
             </li>
             <li>
-              <Link to="/form">Feedback</Link>
+              <Link className={styles.stylingLink} to="/form">Feedback</Link>
             </li>
+            
+
             <li>
-              <Link to="/baz">Contact Us</Link>
+              <Link className={styles.stylingLink} to="/ContactUs">Contact Us</Link>
             </li>
           </ul>
           {/* </div> */}
@@ -81,12 +100,28 @@ function App() {
             
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/teamdetail" exact component={TeamDetail}/>
+        <Route path="/aboutus" exact component={AboutUs}/>
+       
+        <Route exact path={`/newsDetail/:newsId`} 
+        render={({ match}) => {
+          return fetchedNews ? <NewsDetail newsDetail={fetchedNews[match.params.newsId]}/>:null
+        }
+
+        } >
+          
+        </Route>
         
         {/* <Route path="/foo" exact component={Foo} /> */}
         <Route path="/form" exact component={Form} />
-        <Route path="/news" exact component={News} />
-        <Route path="/aboutus" exact component={AboutUs} />
+
+        <Route path="/news" exact component={News}>
+          {isEmpty(fetchedNews)?"Team Data Loading...":
+          <News news={Object.values(fetchedNews)}
+           />}
+        </Route>
+
+        <Route path="/contactus" exact component={ContactUs} />
+
         <Route path="/teams" exact component={Teams} >
 
         {isEmpty(fetchedData) ? "Team Data Loading..." :

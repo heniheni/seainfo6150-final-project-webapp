@@ -7,52 +7,62 @@ const Form = () => {
     const data = new FormData(e.target);
     console.log("DATA", data.get("foo"));
     setSubmittedForm(data);
-  };
+  }
 
   return (
     <div>
-      {
-        submittedForm ? (
-          <div>Your form entry was {submittedForm.get("myText")} and {submittedForm.get("myDropdown")}</div>
-        ) : (
-
-          
-          
-          <form onSubmit={onSubmit}>
-
+      {submittedForm ? (
+        <div>
+          Your form entry was {submittedForm.get("myText")} and{" "}
+          {submittedForm.get("myDropdown")}
+        </div>
+      ) : (
+        <form onSubmit={onSubmit}>
           <div className={styles.formContainer}>
-
-          <h1 className={styles.formName}>Feedback Form</h1>
-    <p className={styles.subText}>Please fill in this form to give your Feedback.</p><br/>
-    <hr/>
-            <label >I have a Feedback About: </label>
+            <h1 className={styles.formName}>Feedback Form</h1>
+            <p className={styles.subText}>
+              Please fill in this form to give your Feedback.
+            </p>
+            <br />
+            <hr />
+            <label>I have a Feedback About: </label>
             <select name="myDropdown">
               <option value="foo">Website Issue</option>
               <option value="bar">My Experience</option>
               <option value="baz">Improvement</option>
-            </select><br/>
+            </select>
+            <br />
 
-            
-
-            <label >Did you Achieve your Goal? </label>
-            <label >Yes</label>
+            <label>Did you Achieve your Goal? </label>
+            <label>Yes</label>
             <input type="radio" name="foo" id="foo-yes" value="yes" />
             <label>No</label>
             <input type="radio" name="foo" id="foo-no" value="no" />
-            <label >Maybe</label>
-            <input type="radio" name="foo" id="foo-maybe" value="maybe" /><br/>
+            <label>Maybe</label>
+            <input type="radio" name="foo" id="foo-maybe" value="maybe" />
+            <br />
 
-            <label htmlFor="myTextId">Name: </label><br/>
-            <input type="text" name="myText" /><br/>
+            <label htmlFor="myTextId">Name: </label>
+            <br />
+            <input type="text" name="myText" required />
+            <br />
 
-            <label>E-mail: </label><br/>
-            <input type="text" name="myText" /><br/>
+            <label>E-mail: </label>
+            <br />
+            <input type="text" name="myText" required />
+            <br />
 
-            <label>Phone No: </label><br/>
-            <input type="text" name="myText" id="myTextId"/><br/>
+            <label>Phone No: </label>
+            <br />
+            <input type="text" name="myText" id="myTextId" required />
+            <br />
 
             <label htmlFor="myDropdownId">City: </label>
-            <select className={styles.dropDown} name="myDropdown" id="myDropdownId">
+            <select
+              className={styles.dropDown}
+              name="myDropdown"
+              id="myDropdownId"
+            >
               <option value="Chennai">Chennai</option>
               <option value="Mumbai">Mumbai</option>
               <option value="Kolkata">Kolkata</option>
@@ -61,28 +71,36 @@ const Form = () => {
               <option value="Mohali">Mohali</option>
               <option value="Jaipur">Jaipur</option>
               <option value="Hyderbad">Hyderbad</option>
-            </select><br/><br/>
+            </select>
+            <br />
+            <br />
 
-            <label>Zip Code: </label><br/>
-            <input type="text" name="zipcode" id="zipcode"/><br/>
+            <label>Zip Code: </label>
+            <br />
+            <input type="text" name="zipcode" id="zipcode" />
+            <br />
 
-            <label>Comments: </label><br/>
-            <input type="text" name="comments" id="comments"/><br/>
+            <label>Comments: </label>
+            <br />
+            <input type="text" name="comments" id="comments" />
+            <br />
             <label>Subscribe for Daily Update: </label>
             <label>Yes</label>
-           <input type="checkbox" name="Yes" id="yes-yes" value="y"/>
-           <label>No</label>
-           <input type="checkbox" name="No" id="no-no" value="n"/><br/>
+            <input type="checkbox" name="Yes" id="yes-yes" value="y" />
+            <label>No</label>
+            <input type="checkbox" name="No" id="no-no" value="n" />
+            <br />
 
-            
-            <input className={styles.submitButton} type="submit" value="Submit" />
-            </div>
-          </form>
-          
-        )
-      }
+            <input
+              className={styles.submitButton}
+              type="submit"
+              value="Submit"
+            />
+          </div>
+        </form>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default Form
+export default Form;

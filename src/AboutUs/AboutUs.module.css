@@ -1,13 +1,23 @@
-.mainContainer{
-  box-shadow: 4px 3px 8px 1px grey;
-  width: 60%;
- 
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  transform: translate(-50%, -50%);
+.stylingHeadings{
+    margin: 20px;
 }
 
-.content{
- 
+.contentStyling{
+    margin: 20px;
+    text-align: justify;
+    max-width: 900px;
+    
 }
+
+.mainContainer{
+    box-shadow: 4px 3px 8px 1px grey;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  
+}
+
+
+  

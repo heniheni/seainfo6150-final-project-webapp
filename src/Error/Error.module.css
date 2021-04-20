@@ -1,0 +1,9 @@
+.errorRedirectLink{
+font-size: 40px;
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

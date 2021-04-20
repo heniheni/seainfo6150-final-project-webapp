@@ -1,0 +1,43 @@
+.stylingTitle{
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+}
+
+.stylingDate{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+}
+.stylingNewsCover{
+    background-size: cover;
+    width: 50%;
+   
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+   
+
+    
+}
+.coverContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shortTextStyling{
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    margin: 10px;
+}
+.contentStyling{
+    max-width: 800px;
+    text-align: justify;
+}
+.contentContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -41,11 +41,11 @@
   list-style-type: none;
   width: 100%;
 }
-a {
+.stylingLink {
   color: white;
   text-transform: uppercase;
   font-family: 'Patua One', sans-serif;
-}
+} 
 
 footer {
   padding: 1rem;

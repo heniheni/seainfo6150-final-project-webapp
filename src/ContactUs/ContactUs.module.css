@@ -1,0 +1,10 @@
+.mainContainer{
+  box-shadow: 4px 3px 8px 1px grey;
+  width: 60%;
+ 
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
