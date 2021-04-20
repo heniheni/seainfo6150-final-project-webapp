@@ -1,6 +1,11 @@
 .formContainer{
     padding: 10px;
 }
+.stylingError{
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+}
 
 label{
     font-weight: bold;

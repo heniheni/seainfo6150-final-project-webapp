@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./FeedBackForm.module.css";
+
 const Form = () => {
   const [submittedForm, setSubmittedForm] = useState();
   function onSubmit(e) {
@@ -9,6 +10,22 @@ const Form = () => {
     setSubmittedForm(data);
   }
 
+
+ 
+ 
+    const [emailError, setEmailError] = useState();
+    const validateEmail = (e) =>{
+      var email=e.target.value;
+      var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+      if (!email.match(pattern)){
+          setEmailError("Enter Valid Email !!");
+      } else{
+        setEmailError("");
+      }
+      
+    }
+
+ 
   return (
     <div>
       {submittedForm ? (
@@ -42,17 +59,18 @@ const Form = () => {
             <input type="radio" name="foo" id="foo-maybe" value="maybe" />
             <br />
 
-            <label htmlFor="myTextId">Name: </label>
+            <label htmlFor="myTextId">*Name: </label>
             <br />
             <input type="text" name="myText" required />
             <br />
 
-            <label>E-mail: </label>
+            <label>*E-mail: </label> <label className={styles.stylingError}>{emailError}</label><br/>
             <br />
-            <input type="text" name="myText" required />
-            <br />
+            <input type="text" id="userEmail" required onChange={(e) => validateEmail(e)}/>
+           
+           
 
-            <label>Phone No: </label>
+            <label>*Phone No: </label>
             <br />
             <input type="text" name="myText" id="myTextId" required />
             <br />
