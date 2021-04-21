@@ -13,137 +13,10 @@ const Home = () => {
     <div>
       <ImagesSlide/>
       </div>
-        <div className={styles.tableContainer}>
-          <table className={styles.scheduleTable}>
-            <tr className={styles.tableFirstRow}>
-              <th></th>
-              <th>Team</th>
-              <th>Pld</th>
-              <th>Won</th>
-              <th>Lost</th>
-              <th>Tied</th>
-              <th>N/R</th>
-              <th>Net RR</th>
-              <th>For</th>
-              <th>Against</th>
-              <th>Pts</th>
-            </tr>
-
-            <tr >
-              <td>1</td>
-              <td className={styles.shadowTable}>Delhi Capitals</td>
-              <td>1</td>
-              <td>1</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>+0.779</td>
-              <td>190/18.4</td>
-              <td>188/20</td>
-              <td>2</td>
-            </tr>
-
-            <tr>
-              <td>2</td>
-              <td className={styles.shadowTable}>Kolkata Knight Riders</td>
-              <td>1</td>
-              <td>1</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>+0.500</td>
-              <td>187/20</td>
-              <td>177/20</td>
-              <td>2</td>
-            </tr>
-
-            <tr>
-              <td>3</td>
-              <td className={styles.shadowTable}>Punjab Kings</td>
-              <td>1</td>
-              <td>1</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>+0.200</td>
-              <td>221/20</td>
-              <td>217/20</td>
-              <td>2</td>
-            </tr>
-
-            <tr>
-              <td>4</td>
-              <td className={styles.shadowTable}>Royal Challengers Bangalore</td>
-              <td>1</td>
-              <td>1</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>+0.050</td>
-              <td>160/20</td>
-              <td>159/20</td>
-              <td>2</td>
-            </tr>
-
-            <tr>
-              <td>5</td>
-              <td className={styles.shadowTable}>Mumbai Indians</td>
-              <td>1</td>
-              <td>0</td>
-              <td>1</td>
-              <td>0</td>
-              <td>0</td>
-              <td>-0.050</td>
-              <td>159/20</td>
-              <td>160/20</td>
-              <td>0</td>
-            </tr>
-
-            <tr>
-              <td>6</td>
-              <td className={styles.shadowTable}>Rajasthan Royals</td>
-              <td>1</td>
-              <td>0</td>
-              <td>1</td>
-              <td>0</td>
-              <td>0</td>
-              <td>-0.200</td>
-              <td>217/20</td>
-              <td>221/20</td>
-              <td>0</td>
-            </tr>
-
-            <tr>
-              <td>7</td>
-              <td className={styles.shadowTable}>Sunrisers Hyderabad</td>
-              <td>1</td>
-              <td>0</td>
-              <td>1</td>
-              <td>0</td>
-              <td>0</td>
-              <td>-0.500</td>
-              <td>177/20</td>
-              <td>187/20</td>
-              <td>0</td>
-            </tr>
-
-            <tr>
-              <td>8</td>
-              <td className={styles.shadowTable}>Chennai Super Kings</td>
-              <td>1</td>
-              <td>0</td>
-              <td>1</td>
-              <td>0</td>
-              <td>0</td>
-              <td>-0.779</td>
-              <td>188/20</td>
-              <td>190/18.4</td>
-              <td>0</td>
-            </tr>
-          </table>
-    </div>
-
-    <div className={styles.leadersContainer}>
+      <div>
+        <h1 className={styles.headerStyling}>2021 Leaders</h1>
+      </div>
+      <div className={styles.leadersContainer}>
 
       <div className={styles.playerOneContainer}>
         <img src={player_one} alt="Sport Player First"/>
@@ -297,6 +170,140 @@ const Home = () => {
         </div>
 
    </div>
+   <div>
+        <h1 className={styles.pointTableHeaderStyling}>Point Table</h1>
+      </div>
+        <div className={styles.tableContainer}>
+          <table className={styles.scheduleTable}>
+            <tr className={styles.tableFirstRow}>
+              <th></th>
+              <th>Team</th>
+              <th>Pld</th>
+              <th>Won</th>
+              <th>Lost</th>
+              <th>Tied</th>
+              <th>N/R</th>
+              <th>Net RR</th>
+              <th>For</th>
+              <th>Against</th>
+              <th>Pts</th>
+            </tr>
+
+            <tr >
+              <td>1</td>
+              <td className={styles.shadowTable}>Delhi Capitals</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>+0.779</td>
+              <td>190/18.4</td>
+              <td>188/20</td>
+              <td>2</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td className={styles.shadowTable}>Kolkata Knight Riders</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>+0.500</td>
+              <td>187/20</td>
+              <td>177/20</td>
+              <td>2</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td className={styles.shadowTable}>Punjab Kings</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>+0.200</td>
+              <td>221/20</td>
+              <td>217/20</td>
+              <td>2</td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td className={styles.shadowTable}>Royal Challengers Bangalore</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>+0.050</td>
+              <td>160/20</td>
+              <td>159/20</td>
+              <td>2</td>
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td className={styles.shadowTable}>Mumbai Indians</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-0.050</td>
+              <td>159/20</td>
+              <td>160/20</td>
+              <td>0</td>
+            </tr>
+
+            <tr>
+              <td>6</td>
+              <td className={styles.shadowTable}>Rajasthan Royals</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-0.200</td>
+              <td>217/20</td>
+              <td>221/20</td>
+              <td>0</td>
+            </tr>
+
+            <tr>
+              <td>7</td>
+              <td className={styles.shadowTable}>Sunrisers Hyderabad</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-0.500</td>
+              <td>177/20</td>
+              <td>187/20</td>
+              <td>0</td>
+            </tr>
+
+            <tr>
+              <td>8</td>
+              <td className={styles.shadowTable}>Chennai Super Kings</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-0.779</td>
+              <td>188/20</td>
+              <td>190/18.4</td>
+              <td>0</td>
+            </tr>
+          </table>
+    </div>
+
+    
     </>
   );
 };

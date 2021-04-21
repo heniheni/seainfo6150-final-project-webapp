@@ -67,7 +67,7 @@ const TeamDetail = (props) => {
       </div>
       <div>
         <div>
-          <h2 className={styles.stylingSquadHeader}>SquadList</h2>
+          <h2 className={styles.stylingSquadHeader}>Squad</h2>
         </div>
 
         <div>

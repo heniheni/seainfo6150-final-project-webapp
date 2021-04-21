@@ -1,3 +1,16 @@
+.inputDataContainer{
+  box-shadow: 4px 3px 8px 1px grey;
+  width: 60%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: 10px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+.fields{
+  padding: 10px;
+}
 .formContainer{
     padding: 10px;
 }

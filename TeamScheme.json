@@ -1,77 +1,76 @@
 {
-    "royal-challengers-banglore": {
-  "tag": "RCB",
-  
-      "teamName": "Royal Challengers Banglore",
-      "teamReference": "royal-challengers-banglore",
-      "owner": "Royal Challengers Sports Private Ltd",
-      "coach": "Simon Katich",
-  "teamDescription":"The Royal Challengers Bangalore (often abbreviated as RCB) are a franchise cricket team based in Bangalore,Karnataka, that plays in the Indian Premier League (IPL). It was founded in 2008 by United Spirits and named after the company's liquor brand Royal Challenge. Since its inception, the team has played its home matches at the M. Chinnaswamy Stadium.",
-      "captain": "Virat Kohli (c)",
-      "venue": "M. Chinnaswamy Stadium",
-      "teamLogoUrl": "https://th.bing.com/th/id/R245d565e5fa3e4fed45bd04d2da6c082?rik=H6zA0PgwW0gw3w&riu=http%3a%2f%2fwww.freelogovectors.net%2fwp-content%2fuploads%2f2020%2f02%2froyal_challengers_bangalore_logo.png&ehk=Shn9XwpnaupWdKZ0vQ90IpiiECYu%2bnlEANzV%2fK%2fGWIE%3d&risl=&pid=ImgRaw",
-      "tournmentWon": "0",
-      "latestTeamNews": [
-        {
-          "title": "VIVO IPL 2021,Match 6 SRH v/s RCB",
-          "by": "IPL STAFF",
-          "datePublished": "14 April 2021",
-          "newsImageUrl": "imageUrl",
-          "shortText": "Royal Challengers Bangalore produced a monumental comeback.",
-          "teamNews": "Royal Challengers Bangalore RCB won their second consecutive game after beating the Sunrisers Hyderabad SRH in Match 6 of the VIVO Indian Premier League IPL 2021 at the M. A. Chidambaram Stadium in Chennai on Wednesday.RCB produced a monumental comeback with the ball after Shahbaz Ahmed struck thrice in one over and managed to defend a total of 149 against SRH Chasing a total of 150 the SRH openers – David Warner and Wriddhiman Saha – got off to a cautious start scoring 13 in the first two overs.Mohammed Siraj built the pressure early on with the new ball forcing Saha to play a rash shot which went straight into the hands of Maxwell at backward point in the third over.However SRH attacked the pace of Kyle Jamieson smashing 17 off the 4th over with Warner and Manish Pandey hitting a six each.The SRH skipper shifted the gears and the fifty was up for the Sunrisers inside the powerplay. Both – Pandey and Warner – looked extremely comfortable in the middle and put the pressure on the RCB spinners.The fifty-run partnership was up between the two as RCB continued to search for. the breakthrough At the halfway mark SRH were 77/1 and were pacing the chase to perfection. Warner leading from the front then notched up his 49th half-century in IPL.However Jamieson provided RCB a much-needed breakthrough as he dismissed Warner in the 14th over.SRH though were still in control of the chase with 42 needed from the final five overs.RCB skipper Kohli then handed the ball to Shahbaz Ahmed in the 17th over and it turned out to be a match-changing move as the left-arm spinner scalped 3 wickets in an over.He dismissed Jonny Bairstow and Pandey on consecutive deliveries and then got Abdul Samad out on the final delivery with all three batsmen attempting to clear the ropes.The pressure built on SRH as they further lost two wickets. First Harshal Patel got rid of Vijay Shankar courtesy a running catch from Kohli in the 18th over and later Siraj dismissed Jason Holder after he holed out in the deep in the penultimate over.Harshal Patel had 16 runs to defend in the final over. While he bowled a no-ball he kept his composure and scalped two wickets helping RCB seal a stunning 6-run win."
-        }
-      ],
-      "squad": [
-        "Virat Kohli",
-        "AB De Villiers (wk)",
-        "Kane Richardson",
-        "Adam Zampa",
-  "Virat Kohli",
-        "AB De Villiers (wk)",
-        "Kane Richardson",
-        "Adam Zampa",
-  "Virat Kohli",
-        "AB De Villiers (wk)",
-        "Kane Richardson",
-        "Adam Zampa",
-   "Adam Zampa",
-  "Virat Kohli",
-        "AB De Villiers (wk)",
-        "Kane Richardson",
-        "Adam Zampa",
-  "Adam Zampa",
-  "Virat Kohli",
-        "AB De Villiers (wk)",
-        "Kane Richardson",
-        "Adam Zampa"
-      ]
-    },
-    "chennai-super-kings": {
-  "tag": "CSK",
-      "teamName": "Chennai Super Kings",
-      "teamReference": "chennai-super-kings",
-      "owner": "Royal Challengers Sports Private Ltd",
-      "coach": "Simon Katich",
-  "teamDescription":"The Chennai Super Kings (CSK) are a franchise cricket team based in Chennai, Tamil Nadu. They play in the Indian Premier League (IPL). Founded in 2008, the team play its home matches at the M. A. Chidambaram Stadium in Chennai. The team served a two-year suspension from the IPL starting July 2015 for the alleged involvement of their owners in the 2013 IPL betting case,[2] and won the title in its comeback season. The team is captained by Mahendra Singh Dhoni and coached by Stephen Fleming.",
-      "captain": "MS Dhoni (c)",
-      "venue": "M. Chinnaswamy Stadium",
-      "teamLogoUrl": "https://th.bing.com/th/id/R245d565e5fa3e4fed45bd04d2da6c082?rik=H6zA0PgwW0gw3w&riu=http%3a%2f%2fwww.freelogovectors.net%2fwp-content%2fuploads%2f2020%2f02%2froyal_challengers_bangalore_logo.png&ehk=Shn9XwpnaupWdKZ0vQ90IpiiECYu%2bnlEANzV%2fK%2fGWIE%3d&risl=&pid=ImgRaw",
-      "tournmentWon": "1",
-      "latestTeamNews": [
-        {
-          "title": "VIVO IPL 2021,Match 6 SRH v/s RCB",
-          "by": "IPL STAFF",
-          "datePublished": "14 April 2021",
-          "newsImageUrl": "imageUrl",
-          "shortText": "Royal Challengers Bangalore produced a monumental comeback.",
-          "teamNews": "Royal Challengers Bangalore RCB won their second consecutive game after beating the Sunrisers Hyderabad SRH in Match 6 of the VIVO Indian Premier League IPL 2021 at the M. A. Chidambaram Stadium in Chennai on Wednesday. RCB produced a monumental comeback with the ball after Shahbaz Ahmed struck thrice in one over and managed to defend a total of 149 against SRH Chasing a total of 150 the SRH openers – David Warner and Wriddhiman Saha – got off to a cautious start scoring 13 in the first two overs.Mohammed Siraj built the pressure early on with the new ball forcing Saha to play a rash shot which went straight into the hands of Maxwell at backward point in the third over.However SRH attacked the pace of Kyle Jamieson smashing 17 off the 4th over with Warner and Manish Pandey hitting a six each.The SRH skipper shifted the gears and the fifty was up for the Sunrisers inside the powerplay. Both – Pandey and Warner – looked extremely comfortable in the middle and put the pressure on the RCB spinners.The fifty-run partnership was up between the two as RCB continued to search for. the breakthrough.At the halfway mark SRH were 77/1 and were pacing the chase to perfection. Warner leading from the front then notched up his 49th half-century in IPL.However Jamieson provided RCB a much-needed breakthrough as he dismissed Warner in the 14th over.SRH though were still in control of the chase with 42 needed from the final five overs.RCB skipper Kohli then handed the ball to Shahbaz Ahmed in the 17th over and it turned out to be a match-changing move as the left-arm spinner scalped 3 wickets in an over.He dismissed Jonny Bairstow and Pandey on consecutive deliveries and then got Abdul Samad out on the final delivery with all three batsmen attempting to clear the ropes.The pressure built on SRH as they further lost two wickets. First Harshal Patel got rid of Vijay Shankar courtesy a running catch from Kohli in the 18th over and later Siraj dismissed Jason Holder after he holed out in the deep in the penultimate over.Harshal Patel had 16 runs to defend in the final over. While he bowled a no-ball he kept his composure and scalped two wickets helping RCB seal a stunning 6-run win."
-        }
-      ],
-      "squad": [
-        "Virat Kohli",
-        "AB De Villiers (wk)",
-        "Kane Richardson",
-        "Adam Zampa"
-      ]
-    }
+  "royal-challengers-banglore": {
+    "tag": "RCB",
+    "teamName": "Royal Challengers Banglore",
+    "teamReference": "royal-challengers-banglore",
+    "owner": "Royal Challengers Sports Private Ltd",
+    "coach": "Simon Katich",
+    "teamDescription": "The Royal Challengers Bangalore (often abbreviated as RCB) are a franchise cricket team based in Bangalore,Karnataka, that plays in the Indian Premier League (IPL). It was founded in 2008 by United Spirits and named after the company's liquor brand Royal Challenge. Since its inception, the team has played its home matches at the M. Chinnaswamy Stadium.",
+    "captain": "Virat Kohli (c)",
+    "venue": "M. Chinnaswamy Stadium",
+    "teamLogoUrl": "https://th.bing.com/th/id/R245d565e5fa3e4fed45bd04d2da6c082?rik=H6zA0PgwW0gw3w&riu=http%3a%2f%2fwww.freelogovectors.net%2fwp-content%2fuploads%2f2020%2f02%2froyal_challengers_bangalore_logo.png&ehk=Shn9XwpnaupWdKZ0vQ90IpiiECYu%2bnlEANzV%2fK%2fGWIE%3d&risl=&pid=ImgRaw",
+    "tournmentWon": "0",
+    "latestTeamNews": [
+      {
+        "title": "VIVO IPL 2021,Match 6 SRH v/s RCB",
+        "by": "IPL STAFF",
+        "datePublished": "14 April 2021",
+        "newsImageUrl": "https://th.bing.com/th/id/R245d565e5fa3e4fed45bd04d2da6c082?rik=H6zA0PgwW0gw3w&riu=http%3a%2f%2fwww.freelogovectors.net%2fwp-content%2fuploads%2f2020%2f02%2froyal_challengers_bangalore_logo.png&ehk=Shn9XwpnaupWdKZ0vQ90IpiiECYu%2bnlEANzV%2fK%2fGWIE%3d&risl=&pid=ImgRaw",
+        "shortText": "Royal Challengers Bangalore produced a monumental comeback.",
+        "teamNews": "Royal Challengers Bangalore RCB won their second consecutive game after beating the Sunrisers Hyderabad SRH in Match 6 of the VIVO Indian Premier League IPL 2021 at the M. A. Chidambaram Stadium in Chennai on Wednesday. RCB produced a monumental comeback with the ball after Shahbaz Ahmed struck thrice in one over and managed to defend a total of 149 against SRH Chasing a total of 150 the SRH openers – David Warner and Wriddhiman Saha – got off to a cautious start scoring 13 in the first two overs.Mohammed Siraj built the pressure early on with the new ball forcing Saha to play a rash shot which went straight into the hands of Maxwell at backward point in the third over.However SRH attacked the pace of Kyle Jamieson smashing 17 off the 4th over with Warner and Manish Pandey hitting a six each.The SRH skipper shifted the gears and the fifty was up for the Sunrisers inside the powerplay. Both – Pandey and Warner – looked extremely comfortable in the middle and put the pressure on the RCB spinners.The fifty-run partnership was up between the two as RCB continued to search for. the breakthrough.At the halfway mark SRH were 77/1 and were pacing the chase to perfection. Warner leading from the front then notched up his 49th half-century in IPL.However Jamieson provided RCB a much-needed breakthrough as he dismissed Warner in the 14th over.SRH though were still in control of the chase with 42 needed from the final five overs.RCB skipper Kohli then handed the ball to Shahbaz Ahmed in the 17th over and it turned out to be a match-changing move as the left-arm spinner scalped 3 wickets in an over.He dismissed Jonny Bairstow and Pandey on consecutive deliveries and then got Abdul Samad out on the final delivery with all three batsmen attempting to clear the ropes.The pressure built on SRH as they further lost two wickets. First Harshal Patel got rid of Vijay Shankar courtesy a running catch from Kohli in the 18th over and later Siraj dismissed Jason Holder after he holed out in the deep in the penultimate over.Harshal Patel had 16 runs to defend in the final over. While he bowled a no-ball he kept his composure and scalped two wickets helping RCB seal a stunning 6-run win."
+      }
+    ],
+    "squad": [
+      "Virat Kohli",
+      "AB De Villiers (wk)",
+      "Kane Richardson",
+      "Adam Zampa",
+      "Virat Kohli",
+      "AB De Villiers (wk)",
+      "Kane Richardson",
+      "Adam Zampa",
+      "Virat Kohli",
+      "AB De Villiers (wk)",
+      "Kane Richardson",
+      "Adam Zampa",
+      "Adam Zampa",
+      "Virat Kohli",
+      "AB De Villiers (wk)",
+      "Kane Richardson",
+      "Adam Zampa",
+      "Adam Zampa",
+      "Virat Kohli",
+      "AB De Villiers (wk)",
+      "Kane Richardson",
+      "Adam Zampa"
+    ]
+  },
+  "chennai-super-kings": {
+    "tag": "CSK",
+    "teamName": "Chennai Super Kings",
+    "teamReference": "chennai-super-kings",
+    "owner": "Royal Challengers Sports Private Ltd",
+    "coach": "Simon Katich",
+    "teamDescription": "The Chennai Super Kings (CSK) are a franchise cricket team based in Chennai, Tamil Nadu. They play in the Indian Premier League (IPL). Founded in 2008, the team play its home matches at the M. A. Chidambaram Stadium in Chennai. The team served a two-year suspension from the IPL starting July 2015 for the alleged involvement of their owners in the 2013 IPL betting case,[2] and won the title in its comeback season. The team is captained by Mahendra Singh Dhoni and coached by Stephen Fleming.",
+    "captain": "MS Dhoni (c)",
+    "venue": "M. Chinnaswamy Stadium",
+    "teamLogoUrl": "https://th.bing.com/th/id/R245d565e5fa3e4fed45bd04d2da6c082?rik=H6zA0PgwW0gw3w&riu=http%3a%2f%2fwww.freelogovectors.net%2fwp-content%2fuploads%2f2020%2f02%2froyal_challengers_bangalore_logo.png&ehk=Shn9XwpnaupWdKZ0vQ90IpiiECYu%2bnlEANzV%2fK%2fGWIE%3d&risl=&pid=ImgRaw",
+    "tournmentWon": "1",
+    "latestTeamNews": [
+      {
+        "title": "VIVO IPL 2021,Match 6 SRH v/s RCB",
+        "by": "IPL STAFF",
+        "datePublished": "14 April 2021",
+        "newsImageUrl": "https://th.bing.com/th/id/R245d565e5fa3e4fed45bd04d2da6c082?rik=H6zA0PgwW0gw3w&riu=http%3a%2f%2fwww.freelogovectors.net%2fwp-content%2fuploads%2f2020%2f02%2froyal_challengers_bangalore_logo.png&ehk=Shn9XwpnaupWdKZ0vQ90IpiiECYu%2bnlEANzV%2fK%2fGWIE%3d&risl=&pid=ImgRaw",
+        "shortText": "Royal Challengers Bangalore produced a monumental comeback.",
+        "teamNews": "Royal Challengers Bangalore RCB won their second consecutive game after beating the Sunrisers Hyderabad SRH in Match 6 of the VIVO Indian Premier League IPL 2021 at the M. A. Chidambaram Stadium in Chennai on Wednesday. RCB produced a monumental comeback with the ball after Shahbaz Ahmed struck thrice in one over and managed to defend a total of 149 against SRH Chasing a total of 150 the SRH openers – David Warner and Wriddhiman Saha – got off to a cautious start scoring 13 in the first two overs.Mohammed Siraj built the pressure early on with the new ball forcing Saha to play a rash shot which went straight into the hands of Maxwell at backward point in the third over. However SRH attacked the pace of Kyle Jamieson smashing 17 off the 4th over with Warner and Manish Pandey hitting a six each.The SRH skipper shifted the gears and the fifty was up for the Sunrisers inside the powerplay. Both – Pandey and Warner – looked extremely comfortable in the middle and put the pressure on the RCB spinners.The fifty-run partnership was up between the two as RCB continued to search for. the breakthrough. At the halfway mark SRH were 77/1 and were pacing the chase to perfection. Warner leading from the front then notched up his 49th half-century in IPL.However Jamieson provided RCB a much-needed breakthrough as he dismissed Warner in the 14th over.SRH though were still in control of the chase with 42 needed from the final five overs.RCB skipper Kohli then handed the ball to Shahbaz Ahmed in the 17th over and it turned out to be a match-changing move as the left-arm spinner scalped 3 wickets in an over.He dismissed Jonny Bairstow and Pandey on consecutive deliveries and then got Abdul Samad out on the final delivery with all three batsmen attempting to clear the ropes.The pressure built on SRH as they further lost two wickets. First Harshal Patel got rid of Vijay Shankar courtesy a running catch from Kohli in the 18th over and later Siraj dismissed Jason Holder after he holed out in the deep in the penultimate over.Harshal Patel had 16 runs to defend in the final over. While he bowled a no-ball he kept his composure and scalped two wickets helping RCB seal a stunning 6-run win."
+      }
+    ],
+    "squad": [
+      "Virat Kohli",
+      "AB De Villiers (wk)",
+      "Kane Richardson",
+      "Adam Zampa"
+    ]
   }
+}

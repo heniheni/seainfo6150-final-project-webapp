@@ -14,7 +14,7 @@ const Form = () => {
   const validateName = (e) => {
     var name = e.target.value;
     if (!name.match(/^[a-zA-Z ]*$/)) {
-      setNameError("Enter Alphabet Character Only!!");
+      setNameError("Enter Alphabet Character Only");
     } else {
       setNameError("");
     }
@@ -27,7 +27,7 @@ const Form = () => {
       /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i
     );
     if (!email.match(pattern)) {
-      setEmailError("Enter Valid Email!!");
+      setEmailError("Enter Valid Email E.g. userXXX@outlook.com");
     } else {
       setEmailError("");
     }
@@ -37,7 +37,7 @@ const Form = () => {
   const validateMobileNumber = (e) => {
     var mobile = e.target.value;
     if (!mobile.match(/^[0-9]{10}$/)) {
-      setMobileNumberError("Enter valid Phone Number!!");
+      setMobileNumberError("Enter valid Phone Number");
     } else {
       setMobileNumberError("");
     }
@@ -46,34 +46,70 @@ const Form = () => {
   return (
     <div>
       {submittedForm ? (
-        <div>
-          Your form entry was {submittedForm.get("myText")} and{" "}
-          {submittedForm.get("myDropdown")}
+        <div className={styles.inputDataContainer}>
+          <h1>Thank You !! We got your Feedback</h1>
+          <div className={styles.fields}>
+            <b>Name: </b> {submittedForm.get("name")}
+          </div>
+          
+          <div className={styles.fields}>
+            <b>I have a Feedback About: </b>{submittedForm.get("myDropdown")}
+          </div>
+
+          <div className={styles.fields}>
+            <b>Did you Achieve your Goal? </b>{submittedForm.get("radio")}
+          </div>
+
+          <div className={styles.fields}>
+            <b>E-mail: </b>{submittedForm.get("email")}
+          </div>
+
+          <div className={styles.fields}>
+            <b>Phone No: </b>{submittedForm.get("mobile")}
+          </div>
+
+          <div className={styles.fields}>
+            <b>City: </b>{submittedForm.get("myDropdownCity")}
+          </div>
+
+          <div className={styles.fields}>
+            <b>Zipcode: </b>{submittedForm.get("zipcode")}
+          </div>
+
+          <div className={styles.fields}>
+            <b>Comments: </b>{submittedForm.get("comments")}
+          </div>
+
+          <div className={styles.fields}>
+            <b>Subscribe for Daily Update: </b>{submittedForm.get("checkbox")}
+          </div> 
         </div>
       ) : (
         <form onSubmit={onSubmit}>
           <div className={styles.formContainer}>
             <h1 className={styles.formName}>Feedback Form</h1>
             <p className={styles.subText}>
-              Please fill in this form to give your Feedback.<br/><br/>
+              Please fill in this form to give your Feedback.
+              <br />
+              <br />
               <i>Fields' marked with * are mandatory </i>
             </p>
             <br />
             <hr />
             <label>I have a Feedback About: </label>
             <select name="myDropdown">
-              <option value="foo">Website Issue</option>
-              <option value="bar">My Experience</option>
-              <option value="baz">Improvement</option>
+              <option value="Website Issue">Website Issue</option>
+              <option value="My Experience">My Experience</option>
+              <option value="Improvement">Improvement</option>
             </select>
             <br />
             <label>Did you Achieve your Goal? </label>
             <label>Yes</label>
-            <input type="radio" name="foo" id="foo-yes" value="yes" />
+            <input type="radio" name="radio" id="foo-yes" value="yes" />
             <label>No</label>
-            <input type="radio" name="foo" id="foo-no" value="no" />
+            <input type="radio" name="radio" id="foo-no" value="no" />
             <label>Maybe</label>
-            <input type="radio" name="foo" id="foo-maybe" value="maybe" />
+            <input type="radio" name="radio" id="foo-maybe" value="maybe" />
             <br />
             <label htmlFor="myTextId">*Name: </label>{" "}
             <label className={styles.stylingError}>{nameError}</label>
@@ -82,6 +118,7 @@ const Form = () => {
             <input
               type="text"
               id="name"
+              name="name"
               required
               onChange={(e) => validateName(e)}
             />
@@ -93,6 +130,7 @@ const Form = () => {
             <input
               type="text"
               id="userEmail"
+              name="email"
               required
               onChange={(e) => validateEmail(e)}
             />
@@ -102,6 +140,7 @@ const Form = () => {
             <input
               type="text"
               id="mobile"
+              name="mobile"
               required
               onChange={(e) => validateMobileNumber(e)}
             />
@@ -109,7 +148,7 @@ const Form = () => {
             <label htmlFor="myDropdownId">City: </label>
             <select
               className={styles.dropDown}
-              name="myDropdown"
+              name="myDropdownCity"
               id="myDropdownId"
             >
               <option value="Chennai">Chennai</option>
@@ -133,9 +172,9 @@ const Form = () => {
             <br />
             <label>Subscribe for Daily Update: </label>
             <label>Yes</label>
-            <input type="checkbox" name="Yes" id="yes-yes" value="y" />
+            <input type="checkbox" name="checkbox" id="yes-yes" value="yes" />
             <label>No</label>
-            <input type="checkbox" name="No" id="no-no" value="n" />
+            <input type="checkbox" name="checkbox" id="no-no" value="no" />
             <br />
             <input
               className={styles.submitButton}

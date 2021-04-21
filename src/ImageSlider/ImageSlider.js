@@ -48,8 +48,9 @@ class ImagesSlide extends Component{
           <div>
             <img className={styles.ImageSlider} src={this.state.imageList[this.state.index]} alt="" /> <br />
             <div className={styles.directionalButtons}>
-            <button className={styles.forwardButton} onClick={this.onClickNextButton}>Next</button>
+            
             <button className={styles.previousButton} onClick={this.onClickPreviousButton}>Previous</button>
+            <button className={styles.forwardButton} onClick={this.onClickNextButton}>Next</button>
             </div>
             
           </div>
