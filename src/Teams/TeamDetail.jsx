@@ -20,7 +20,11 @@ const TeamDetail = (props) => {
   return (
     <div>
       <div className={styles.mainContainer}>
-        <img className={styles.logoStyling} src={bcci} alt="Board of Control for Cricket in India" />
+        <img
+          className={styles.logoStyling}
+          src={bcci}
+          alt="Board of Control for Cricket in India"
+        />
         <h4 className={styles.teamNameStyling}>{props.team.teamName}</h4>
 
         <div className={styles.teamDescription}>

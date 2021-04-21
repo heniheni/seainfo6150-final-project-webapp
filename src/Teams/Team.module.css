@@ -1,4 +1,11 @@
 .mainDiv{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 55px;
+    
+} 
+
+/* .mainDiv{
     display: flex;
-    justify-content: space-around;
-}
+    flex-flow: row wrap;
+} */
