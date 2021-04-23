@@ -58,11 +58,7 @@ function App() {
       <div className={styles.headerContainer}>
         <header>
           <nav className={styles.navContainer}>
-            <img
-              className={styles.logoBox}
-              src={ipl}
-              alt="IPL Player Cricket"
-            />
+          <Link to="/"><img className={styles.logoBox} src={ipl} alt="IPL Player Cricket"/></Link>
 
             {/* <div  className={styles.menuContainer}> */}
             <ul className={styles.listControl}>

@@ -33,6 +33,19 @@
   height: 80px;
   width: 160px;
 }
+@media(min-width:300px){
+  .logoBox{
+    height: 40px;
+    width: 80px;
+  }
+}
+
+@media(min-width:1000px){
+  .logoBox{
+    height: 80px;
+    width: 160px;
+  }
+}
 
 .listControl {
   display: flex;
@@ -41,6 +54,22 @@
   justify-content: space-evenly;
   list-style-type: none;
   width: 100%;
+}
+@media(min-width:300px){
+  .listControl{
+    font-size: 12px;
+    display: flex;
+    flex-flow: row wrap;
+   
+  }
+}
+
+@media(min-width:1000px){
+  .listControl{
+    font-size: 20px;
+    display: flex;
+    flex-flow: row wrap;
+  }
 }
 .stylingLink:hover{
   color: yellow;

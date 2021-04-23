@@ -8,11 +8,24 @@
 .teamOneContainer {
   margin-top: 20px;
   padding: 20px 10px 40px 10px;
-  background: linear-gradient(136deg, #f12711, #f5af19);
+  /* background: linear-gradient(136deg, #f12711, #f5af19); */
+  /* background: linear-gradient(136deg, #005aa7, #3d3d3b); */
+  background: linear-gradient(136deg, #061d42, #19398a);
   flex-flow: column;
   display: flex;
   height: 300px;
   width: 300px;
+  border-radius: 8px;
+}
+
+.teamOneContainer:hover {
+  margin-top: 20px;
+  padding: 20px 10px 40px 10px;
+  background: linear-gradient(136deg, #f5af19, #f12711);
+  flex-flow: column;
+  display: flex;
+  height: 306px;
+  width: 306px;
   border-radius: 8px;
 }
 .stylingLogo {
@@ -50,11 +63,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 .stylingLink {
   text-decoration: none;
   cursor: pointer;
   font-weight: bold;
   letter-spacing: 2px;
+  font-size: 20px;
   color: white;
+}
+.stylingLink:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 500px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
