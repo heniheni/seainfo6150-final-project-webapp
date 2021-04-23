@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the Image Slider component correctly 1`] = `
+<div>
+  <div>
+    <img
+      alt=""
+      class="ImageSlider"
+      src="scone.PNG"
+    />
+     
+    <br />
+    <div
+      class="directionalButtons"
+    >
+      <button
+        class="previousButton"
+      >
+        Previous
+      </button>
+      <button
+        class="forwardButton"
+      >
+        Next
+      </button>
+    </div>
+  </div>
+</div>
+`;

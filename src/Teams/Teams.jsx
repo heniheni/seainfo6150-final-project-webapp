@@ -1,33 +1,28 @@
-import React from 'react'
+import React from "react";
 import PropTypes from "prop-types";
-import TeamListItem from "./TeamListItem"
+import TeamListItem from "./TeamListItem";
 import styles from "./Team.module.css";
 
 const Teams = (props) => {
-    let displayContent;
+  let displayContent;
 
-    if (props.teams.length) {
-      displayContent = (
-        <div className={styles.mainDiv}>
-          {props.teams.map((team) => (
-             <TeamListItem team={team}  />
-          ))}
-        </div>
-      );
-    } else {
-      displayContent = <div>You have no data!</div>;
-    }
-  
-    return (
-      <div>
-        {displayContent}
+  if (props.teams.length) {
+    displayContent = (
+      <div className={styles.mainDiv}>
+        {props.teams.map((team) => (
+          <TeamListItem key={team.tag} team={team} />
+        ))}
       </div>
     );
-  };
-  
-  Teams.propTypes = {
-      teams: PropTypes.array.isRequired
+  } else {
+    displayContent = <div>You have no data!</div>;
   }
 
+  return <div>{displayContent}</div>;
+};
 
-export default Teams
+Teams.propTypes = {
+  teams: PropTypes.array.isRequired,
+};
+
+export default Teams;

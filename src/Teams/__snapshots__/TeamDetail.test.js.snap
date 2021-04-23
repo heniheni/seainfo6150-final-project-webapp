@@ -1,0 +1,247 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TeamDetail tests renders correctly 1`] = `
+<div>
+  <div>
+    <div
+      class="mainContainer"
+    >
+      <img
+        alt="Board of Control for Cricket in India"
+        class="logoStyling"
+        src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/596px-Chennai_Super_Kings_Logo.svg.png"
+      />
+      <h4
+        class="teamNameStyling"
+      >
+        Chennai Super Kings
+      </h4>
+      <div
+        class="teamDescription"
+      >
+        <div
+          class="teamInfo"
+        >
+          <div
+            class="contentOne"
+          >
+            <div
+              class="subContainer"
+            >
+              <small
+                class="fields"
+              >
+                Owner
+              </small>
+              <small
+                class="valueStyling"
+              >
+                Chennai Super Kings Cricket Ltd
+              </small>
+            </div>
+            <div
+              class="subContainer"
+            >
+              <small
+                class="fields"
+              >
+                Coach
+              </small>
+              <small
+                class="valueStyling"
+              >
+                Stephen Fleming
+              </small>
+            </div>
+          </div>
+          <div
+            class="contentTwo"
+          >
+            <div
+              class="subContainer"
+            >
+              <small
+                class="fields"
+              >
+                Venue
+              </small>
+              <small
+                class="valueStyling"
+              >
+                M. A. Chidambaram Stadium
+              </small>
+            </div>
+            <div
+              class="subContainer"
+            >
+              <small
+                class="fields"
+              >
+                Captain
+              </small>
+              <small
+                class="valueStyling"
+              >
+                MS Dhoni
+              </small>
+            </div>
+          </div>
+        </div>
+        <div
+          class="contentThree"
+        >
+          <div>
+            <p>
+              Text
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <h2
+          class="stylingSquadHeader"
+        >
+          Squad
+        </h2>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <div
+              class="listingMainContainer"
+            >
+              <div
+                class="listingName"
+              >
+                MS Dhoni (c/wk)
+              </div>
+              <div
+                class="listingName"
+              >
+                Faf du Plessis
+              </div>
+              <div
+                class="listingName"
+              >
+                Ruturaj Gaikwad
+              </div>
+              <div
+                class="listingName"
+              >
+                Suresh Raina
+              </div>
+              <div
+                class="listingName"
+              >
+                Ambati Rayudu
+              </div>
+              <div
+                class="listingName"
+              >
+                N. Jagadeesan (wk)
+              </div>
+              <div
+                class="listingName"
+              >
+                Robin Uthappa
+              </div>
+              <div
+                class="listingName"
+              >
+                Ravindra Jadeja
+              </div>
+              <div
+                class="listingName"
+              >
+                Sam Curran
+              </div>
+              <div
+                class="listingName"
+              >
+                Dwayne Bravo
+              </div>
+              <div
+                class="listingName"
+              >
+                Karn Sharma
+              </div>
+              <div
+                class="listingName"
+              >
+                R. Sai Kishore
+              </div>
+              <div
+                class="listingName"
+              >
+                Mitchell Santner
+              </div>
+              <div
+                class="listingName"
+              >
+                Imran Tahir
+              </div>
+              <div
+                class="listingName"
+              >
+                Deepak Chahar
+              </div>
+              <div
+                class="listingName"
+              >
+                Shardul Thakur
+              </div>
+              <div
+                class="listingName"
+              >
+                Lungi Ngidi
+              </div>
+              <div
+                class="listingName"
+              >
+                KM Asif
+              </div>
+              <div
+                class="listingName"
+              >
+                Moeen Ali
+              </div>
+              <div
+                class="listingName"
+              >
+                K Gowtham
+              </div>
+              <div
+                class="listingName"
+              >
+                Cheteshwar Pujara
+              </div>
+              <div
+                class="listingName"
+              >
+                M Harisankar Reddy
+              </div>
+              <div
+                class="listingName"
+              >
+                K. Bhagath Varma
+              </div>
+              <div
+                class="listingName"
+              >
+                C Hari Nishanth
+              </div>
+              <div
+                class="listingName"
+              >
+                Jason Behrendorff
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;

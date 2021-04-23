@@ -9,7 +9,7 @@ const TeamDetail = (props) => {
     SquadList = (
       <div className={styles.listingMainContainer}>
         {props.team.squad.map((playername) => (
-          <div className={styles.listingName}>{playername}</div>
+          <div className={styles.listingName} key={playername}>{playername}</div>
         ))}
       </div>
     );
@@ -22,7 +22,8 @@ const TeamDetail = (props) => {
       <div className={styles.mainContainer}>
         <img
           className={styles.logoStyling}
-          src={bcci}
+          //src={bcci}
+          src={props.team.teamLogoUrl}
           alt="Board of Control for Cricket in India"
         />
         <h4 className={styles.teamNameStyling}>{props.team.teamName}</h4>

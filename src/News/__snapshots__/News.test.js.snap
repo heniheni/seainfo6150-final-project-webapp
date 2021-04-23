@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`News tests renders correctly 1`] = `
+<div>
+  <div>
+    <div>
+      You have no data!
+    </div>
+  </div>
+</div>
+`;

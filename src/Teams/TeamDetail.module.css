@@ -4,6 +4,7 @@
     margin-right: auto;
     width: 200px;
     height: 200px;
+    padding-top: 10px;
 }
 .mainContainer{
     background: linear-gradient(160deg,  #0082c8,#667db6);

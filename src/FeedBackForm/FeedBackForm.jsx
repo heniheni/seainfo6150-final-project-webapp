@@ -111,7 +111,7 @@ const Form = () => {
             <label>Maybe</label>
             <input type="radio" name="radio" id="foo-maybe" value="maybe" />
             <br />
-            <label htmlFor="myTextId">*Name: </label>{" "}
+            <label >*Name: </label>{" "}
             <label className={styles.stylingError}>{nameError}</label>
             <br />
             <br />

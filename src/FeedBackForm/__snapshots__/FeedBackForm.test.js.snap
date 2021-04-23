@@ -1,0 +1,233 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FeedBackForm tests renders correctly 1`] = `
+<div>
+  <div>
+    <form>
+      <div
+        class="formContainer"
+      >
+        <h1
+          class="formName"
+        >
+          Feedback Form
+        </h1>
+        <p
+          class="subText"
+        >
+          Please fill in this form to give your Feedback.
+          <br />
+          <br />
+          <i>
+            Fields' marked with * are mandatory 
+          </i>
+        </p>
+        <br />
+        <hr />
+        <label>
+          I have a Feedback About: 
+        </label>
+        <select
+          name="myDropdown"
+        >
+          <option
+            value="Website Issue"
+          >
+            Website Issue
+          </option>
+          <option
+            value="My Experience"
+          >
+            My Experience
+          </option>
+          <option
+            value="Improvement"
+          >
+            Improvement
+          </option>
+        </select>
+        <br />
+        <label>
+          Did you Achieve your Goal? 
+        </label>
+        <label>
+          Yes
+        </label>
+        <input
+          id="foo-yes"
+          name="radio"
+          type="radio"
+          value="yes"
+        />
+        <label>
+          No
+        </label>
+        <input
+          id="foo-no"
+          name="radio"
+          type="radio"
+          value="no"
+        />
+        <label>
+          Maybe
+        </label>
+        <input
+          id="foo-maybe"
+          name="radio"
+          type="radio"
+          value="maybe"
+        />
+        <br />
+        <label
+          for="myTextId"
+        >
+          *Name: 
+        </label>
+         
+        <label
+          class="stylingError"
+        />
+        <br />
+        <br />
+        <input
+          id="name"
+          name="name"
+          required=""
+          type="text"
+        />
+        <br />
+        <label>
+          *E-mail: 
+        </label>
+         
+        <label
+          class="stylingError"
+        />
+        <br />
+        <br />
+        <input
+          id="userEmail"
+          name="email"
+          required=""
+          type="text"
+        />
+        <label>
+          *Phone No: 
+        </label>
+         
+        <label
+          class="stylingError"
+        />
+        <br />
+        <input
+          id="mobile"
+          name="mobile"
+          required=""
+          type="text"
+        />
+        <br />
+        <label
+          for="myDropdownId"
+        >
+          City: 
+        </label>
+        <select
+          class="dropDown"
+          id="myDropdownId"
+          name="myDropdownCity"
+        >
+          <option
+            value="Chennai"
+          >
+            Chennai
+          </option>
+          <option
+            value="Mumbai"
+          >
+            Mumbai
+          </option>
+          <option
+            value="Kolkata"
+          >
+            Kolkata
+          </option>
+          <option
+            value="Bengaluru"
+          >
+            Bengaluru
+          </option>
+          <option
+            value="New Delhi"
+          >
+            New Delhi
+          </option>
+          <option
+            value="Mohali"
+          >
+            Mohali
+          </option>
+          <option
+            value="Jaipur"
+          >
+            Jaipur
+          </option>
+          <option
+            value="Hyderbad"
+          >
+            Hyderbad
+          </option>
+        </select>
+        <br />
+        <br />
+        <label>
+          Zip Code: 
+        </label>
+        <br />
+        <input
+          id="zipcode"
+          name="zipcode"
+          type="text"
+        />
+        <br />
+        <label>
+          Comments: 
+        </label>
+        <br />
+        <input
+          id="comments"
+          name="comments"
+          type="text"
+        />
+        <br />
+        <label>
+          Subscribe for Daily Update: 
+        </label>
+        <label>
+          Yes
+        </label>
+        <input
+          id="yes-yes"
+          name="checkbox"
+          type="checkbox"
+          value="yes"
+        />
+        <label>
+          No
+        </label>
+        <input
+          id="no-no"
+          name="checkbox"
+          type="checkbox"
+          value="no"
+        />
+        <br />
+        <input
+          class="submitButton"
+          type="submit"
+          value="Submit"
+        />
+      </div>
+    </form>
+  </div>
+</div>
+`;

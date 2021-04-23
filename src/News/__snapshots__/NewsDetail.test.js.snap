@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsDetail tests renders correctly 1`] = `
+<div>
+  <div>
+    <div>
+      <article>
+        <div>
+          <h1
+            class="stylingTitle"
+          >
+            dummy title
+          </h1>
+          <div
+            class="stylingDate"
+          >
+            <time
+              datetime="2021-04-09T15:30:00.000Z"
+            >
+              April 9th 2021, 9:30 pm
+            </time>
+          </div>
+        </div>
+        <div
+          class="coverContainer"
+        >
+          <img
+            alt="News Cover"
+            class="stylingNewsCover"
+            src="https://resources.platform.iplt20.com/photo-resources/2021/04/09/d4189aa6-da1a-41af-9132-53b23cdde606/Match01-_00532-1-.JPG?width=2000&height=1333"
+          />
+        </div>
+        <div>
+          <h4
+            class="shortTextStyling"
+          >
+            Harshal Patel starred with the ball and scalped a five-wicket haul.
+          </h4>
+        </div>
+        <div
+          class="contentContainer"
+        >
+          <div
+            class="detailedTextStyling"
+          >
+            Test Text
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+`;

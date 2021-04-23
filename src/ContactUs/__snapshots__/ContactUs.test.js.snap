@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactUs tests renders correctly 1`] = `
+<div>
+  <div
+    class="mainContainer"
+  >
+    <div>
+      <h1>
+        Contact Us
+      </h1>
+    </div>
+    <hr />
+    <div>
+      <h3
+        class="subHeading"
+      >
+        Contact Details
+      </h3>
+    </div>
+    <br />
+    <div
+      class="content"
+    >
+      <p>
+        BCCI-IPL
+        <br />
+        4th Floor, Cricket Centre
+        <br />
+        Wankhede Stadium
+        <br />
+        ‘D’ Road, Churchgate
+        <br />
+        Mumbai- 400020
+        <br />
+        India
+        <br />
+        <br />
+        T +91 22 22800300
+        <br />
+        T +91 22 61580300
+        <br />
+        F +91 22 22800354
+        <br />
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -16,7 +16,6 @@ import News from "./News/News.jsx";
 import NewsDetail from "./News/NewsDetail.jsx";
 import AboutUs from "./AboutUs/AboutUs.jsx";
 
-
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
 const externalContent = {
@@ -52,123 +51,136 @@ function App() {
     if (isEmpty(fetchedNews)) {
       fetchNews();
     }
-  }, [fetchedData,fetchedNews]);
+  }, [fetchedData, fetchedNews]);
 
-
-
-  return  (
+  return (
     <div className={styles.mainContainer}>
       <div className={styles.headerContainer}>
-      <header>
-        <nav className={styles.navContainer}>
+        <header>
+          <nav className={styles.navContainer}>
+            <img
+              className={styles.logoBox}
+              src={ipl}
+              alt="IPL Player Cricket"
+            />
 
-            <img className={styles.logoBox} src={ipl} alt="IPL Player Cricket" />
+            {/* <div  className={styles.menuContainer}> */}
+            <ul className={styles.listControl}>
+              {/* these links should show you how to connect up a link to a specific route */}
+              <li>
+                <Link className={styles.stylingLink} to="/">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link className={styles.stylingLink} to="/Teams">
+                  Teams
+                </Link>
+              </li>
+              <li>
+                <Link className={styles.stylingLink} to="/News">
+                  News
+                </Link>
+              </li>
+              <li>
+                <Link className={styles.stylingLink} to="/AboutUs">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link className={styles.stylingLink} to="/form">
+                  Feedback
+                </Link>
+              </li>
 
-          {/* <div  className={styles.menuContainer}> */}
-          <ul className={styles.listControl}>
-            {/* these links should show you how to connect up a link to a specific route */}
-            <li>
-              <Link className={styles.stylingLink} to="/">Home</Link>
-            </li>
-            <li>
-              <Link className={styles.stylingLink} to="/Teams">Teams</Link>
-            </li>
-            <li>
-              <Link className={styles.stylingLink} to="/News">News</Link>
-            </li>
-            <li>
-              <Link className={styles.stylingLink} to="/AboutUs">About Us</Link>
-            </li>
-            <li>
-              <Link className={styles.stylingLink} to="/form">Feedback</Link>
-            </li>
-            
-
-            <li>
-              <Link className={styles.stylingLink} to="/ContactUs">Contact Us</Link>
-            </li>
-          </ul>
-          {/* </div> */}
-        </nav>
-      </header>
+              <li>
+                <Link className={styles.stylingLink} to="/ContactUs">
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+            {/* </div> */}
+          </nav>
+        </header>
       </div>
-      
+
       {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-            <div className={styles.centerArea}>
+      <div className={styles.centerArea}>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/aboutus" exact component={AboutUs} />
 
-            
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/aboutus" exact component={AboutUs}/>
-       
-        <Route exact path={`/newsDetail/:newsId`} 
-        render={({ match}) => {
-          return fetchedNews ? <NewsDetail newsDetail={fetchedNews[match.params.newsId]}/>:null
-        }
+          <Route
+            exact
+            path={`/newsDetail/:newsId`}
+            render={({ match }) => {
+              return fetchedNews ? (
+                <NewsDetail newsDetail={fetchedNews[match.params.newsId]} />
+              ) : null;
+            }}
+          ></Route>
 
-        } >
-          
-        </Route>
-        
-        {/* <Route path="/foo" exact component={Foo} /> */}
-        <Route path="/form" exact component={Form} />
+          {/* <Route path="/foo" exact component={Foo} /> */}
+          <Route path="/form" exact component={Form} />
 
-        <Route path="/news" exact component={News}>
-          {isEmpty(fetchedNews)?"Team Data Loading...":
-          <News news={Object.values(fetchedNews)}
-           />}
-        </Route>
-
-        <Route path="/contactus" exact component={ContactUs} />
-
-        <Route path="/teams" exact component={Teams} >
-
-        {isEmpty(fetchedData) ? "Team Data Loading..." :
-          <Teams teams={Object.values(fetchedData)} />}
+          <Route path="/news" exact component={News}>
+            {isEmpty(fetchedNews) ? (
+              "Team Data Loading..."
+            ) : (
+              <News news={Object.values(fetchedNews)} />
+            )}
           </Route>
-        {/* passing parameters via a route path */}
-        <Route
-          path="/bar/:categoryId/:productId"
-          exact
-          render={({ match }) => (
-            // getting the parameters from the url and passing
-            // down to the component as props
-           
-            <Bar
-              categoryId={match.params.categoryId}
-              productId={match.params.productId}
-            />
-          )}
-        />
-        <Route
-          path="/baz"
-          exact
-          render={() => <Baz content={externalContent} />}
-        />
-       
-        <Route
-          exact
-          path={`/TeamDetail/:teamReference`}
-          render={({ match }) => {
-            // getting the parameters from the url and passing
-            // down to the component as props
-            return fetchedData ? <TeamDetail
-              team={fetchedData[match.params.teamReference]}
-            /> : null
-          }}
-        />
 
-        
+          <Route path="/contactus" exact component={ContactUs} />
 
+          <Route path="/teams" exact component={Teams}>
+            {isEmpty(fetchedData) ? (
+              "Team Data Loading..."
+            ) : (
+              <Teams teams={Object.values(fetchedData)} />
+            )}
+          </Route>
+          {/* passing parameters via a route path */}
+          <Route
+            path="/bar/:categoryId/:productId"
+            exact
+            render={({ match }) => (
+              // getting the parameters from the url and passing
+              // down to the component as props
 
-      
-        <Route component={Error} />
-      </Switch>
+              <Bar
+                categoryId={match.params.categoryId}
+                productId={match.params.productId}
+              />
+            )}
+          />
+          <Route
+            path="/baz"
+            exact
+            render={() => <Baz content={externalContent} />}
+          />
+
+          <Route
+            exact
+            path={`/TeamDetail/:teamReference`}
+            render={({ match }) => {
+              // getting the parameters from the url and passing
+              // down to the component as props
+              return fetchedData ? (
+                <TeamDetail team={fetchedData[match.params.teamReference]} />
+              ) : null;
+            }}
+          />
+
+          <Route component={Error} />
+        </Switch>
       </div>
       <footer>
-        	&#9400; 2021 Heni Bhungalia
-        <Link className={styles.footerLink} to="/baz">Contact Us</Link>
+        Developed By: <i>Heni Bhungalia</i> 
+        <Link className={styles.footerLink} to="/ContactUs">
+          Contact Us
+        </Link>
       </footer>
     </div>
   );

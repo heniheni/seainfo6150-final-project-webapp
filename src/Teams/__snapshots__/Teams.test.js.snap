@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Teams tests renders correctly 1`] = `
+<div>
+  <div>
+    <div
+      class="mainDiv"
+    >
+      <div
+        class="teamOneContainer"
+      >
+        <img
+          alt="Board of Control for Cricket in India"
+          class="stylingLogo"
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/596px-Chennai_Super_Kings_Logo.svg.png"
+        />
+        <h4
+          class="stylingTeamName"
+        >
+          Chennai Super Kings
+        </h4>
+        <small
+          class="stylingVenue"
+        >
+          M. A. Chidambaram Stadium
+        </small>
+        <div
+          class="styleWonContainer"
+        >
+          <strong
+            class="stylingWon"
+          >
+            2010, 2011, 2018
+          </strong>
+        </div>
+        <div
+          class="teamDetailContainer"
+        >
+          <a
+            class="stylingLink"
+            href="/TeamDetail/chennai-super-kings"
+          >
+            Team Detail
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

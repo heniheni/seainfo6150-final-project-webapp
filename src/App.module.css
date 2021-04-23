@@ -10,7 +10,7 @@
 }
 .mainContainer {
   display: block;
-  cursor: pointer;
+ 
 }
 .headerContainer {
   background-image: linear-gradient(
@@ -36,10 +36,14 @@
 
 .listControl {
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-evenly;
   list-style-type: none;
   width: 100%;
+}
+.stylingLink:hover{
+  color: yellow;
 }
 .stylingLink {
   color: white;
@@ -59,7 +63,6 @@ footer {
     #061d42
   );
   border-top: 2px solid #ef4123;
- 
   position: fixed;  
   bottom: 0;
   width: 100%;
@@ -70,9 +73,14 @@ footer {
 
 .footerLink {
   float: right;
-  padding-right: 30px;
+  padding-right: 40px;
   color: white;
   font-weight: bold;
   font-family: monospace;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.footerLink:hover{
+  font-size: 15px;
 }
