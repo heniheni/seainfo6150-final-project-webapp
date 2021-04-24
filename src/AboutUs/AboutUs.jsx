@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./AboutUs.module.css";
 
 
@@ -6,7 +7,8 @@ const ContactUs = (props) => {
     //const image1 = require(props.team.teamLogoUrl);
     return (
  
-        
+        <div>
+          <Link className={styles.stylingBreadCrumb} to="/">Home{' >'}</Link><Link className={styles.stylingBreadCrumb} to="/AboutUs">AboutUs</Link>
         
       <div className={styles.mainContainer}>
          
@@ -47,6 +49,8 @@ const ContactUs = (props) => {
           </div>
        
       </div>
+      </div>
+        
      
     );
   };

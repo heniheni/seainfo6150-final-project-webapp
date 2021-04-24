@@ -3,7 +3,9 @@
     font-size: 40px;
     margin: 20px;
 }
-
+.stylingBreadCrumb{
+    text-decoration: none;
+}
 .stylingDate{
     text-align: center;
     font-style: italic;

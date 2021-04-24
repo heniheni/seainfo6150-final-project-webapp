@@ -42,8 +42,8 @@
 
 @media(min-width:1000px){
   .logoBox{
-    height: 80px;
-    width: 160px;
+    height: 60px;
+    width: 100px;
   }
 }
 
@@ -66,7 +66,7 @@
 
 @media(min-width:1000px){
   .listControl{
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     flex-flow: row wrap;
   }
@@ -112,4 +112,6 @@ footer {
 
 .footerLink:hover{
   font-size: 15px;
+  color: yellow;
+  text-decoration: underline;
 }

@@ -6,10 +6,12 @@ import player_one from "../images/player_one.png";
 import player_two from "../images/player_two.png";
 import player_three from "../images/player_three.png";
 import styles from "./Home.module.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <>
+  
       <div>
         <ImagesSlide />
       </div>

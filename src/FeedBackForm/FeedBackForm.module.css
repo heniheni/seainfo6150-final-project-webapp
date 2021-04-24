@@ -1,13 +1,18 @@
 .inputDataContainer{
-  box-shadow: 4px 3px 8px 1px grey;
-  width: 60%;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  margin-top: 10px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
+
+    display: block;
+    box-shadow: 4px 3px 8px 1px grey;
+    width: 60%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 20%;
+
  
+}
+.stylingBreadCrumb{
+  text-decoration: none;
 }
 .fields{
   padding: 10px;
@@ -71,19 +76,24 @@ input[type="text"]{
     border: none;
     background: #f1f1f1;
     margin-right: 15px;
-    border-radius: 10px;
-    
+    border-radius: 10px;   
+}
+input:focus{
+ outline: none;
+  border: none;
+  box-shadow: #19398a 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
 .submitButton {
-    background-color: #4CAF50;
+    background-color: #19398a;
     color: white;
     /* padding: 16px 20px;  */
     border: none;
     cursor: pointer;
     width: 100%;
-    opacity: 0.9;
+    
     height: 40px;
+    
     margin-right: 15px;
   }
 

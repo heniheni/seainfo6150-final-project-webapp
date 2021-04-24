@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./FeedBackForm.module.css";
+import { Link } from "react-router-dom";
 
 const Form = () => {
   const [submittedForm, setSubmittedForm] = useState();
@@ -45,6 +46,8 @@ const Form = () => {
 
   return (
     <div>
+        <Link className={styles.stylingBreadCrumb} to="/">Home {' > '}</Link><Link className={styles.stylingBreadCrumb} to="/Form"> FeedbackForm</Link>
+        
       {submittedForm ? (
         <div className={styles.inputDataContainer}>
           <h1>Thank You !! We got your Feedback</h1>
@@ -81,7 +84,10 @@ const Form = () => {
           </div>
 
           <div className={styles.fields}>
-            <b>Subscribe for Daily Update: </b>{submittedForm.get("checkbox")}
+            <b>Which team do you support? </b>{submittedForm.get("checkbox1")} {submittedForm.get("checkbox2")}
+            {submittedForm.get("checkbox3")} {submittedForm.get("checkbox4")} {submittedForm.get("checkbox5")} {submittedForm.get("checkbox6")}
+            {submittedForm.get("checkbox7")} {submittedForm.get("checkbox8")}
+            
           </div> 
         </div>
       ) : (
@@ -94,7 +100,7 @@ const Form = () => {
               <br />
               <i>Fields' marked with * are mandatory </i>
             </p>
-            <br />
+            
             <hr />
             <label>I have a Feedback About: </label>
             <select name="myDropdown">
@@ -173,11 +179,23 @@ const Form = () => {
             <br />
             <input type="text" name="comments" id="comments" placeholder="Type Here" />
             <br />
-            <label>Subscribe for Daily Update: </label>
-            <label>Yes</label>
-            <input type="checkbox" name="checkbox" id="yes-yes" value="yes" />
-            <label>No</label>
-            <input type="checkbox" name="checkbox" id="no-no" value="no" />
+            <label>Which team do you support? </label>
+            <label>RCB</label>
+            <input type="checkbox" name="checkbox1"  value="RCB" />
+            <label>CSK</label>
+            <input type="checkbox" name="checkbox2"  value="CSK" />
+            <label>MI</label>
+            <input type="checkbox" name="checkbox3"  value="MI" />
+            <label>DC</label>
+            <input type="checkbox" name="checkbox4"  value="DC" />
+            <label>KKR</label>
+            <input type="checkbox" name="checkbox5" value="KKR" />
+            <label>PBKS</label>
+            <input type="checkbox" name="checkbox6"  value="PBKS" />
+            <label>RR</label>
+            <input type="checkbox" name="checkbox7"  value="RR" />
+            <label>SRH</label>
+            <input type="checkbox" name="checkbox8"  value="SRH" />
             <br />
             <input
               className={styles.submitButton}

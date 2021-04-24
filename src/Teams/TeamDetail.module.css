@@ -71,6 +71,9 @@ margin: 20px;
     font-style: italic;
     font-size: 30px;
 }
+.stylingBreadCrumb{
+    text-decoration: none;
+}
 .listingName{
     margin: 15px;
     list-style: none;

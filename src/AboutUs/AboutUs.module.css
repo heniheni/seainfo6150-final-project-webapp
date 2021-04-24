@@ -1,7 +1,9 @@
 .stylingHeadings{
     margin: 20px;
 }
-
+.stylingBreadCrumb{
+    text-decoration: none;
+}
 .contentStyling{
     margin: 20px;
     text-align: justify;
@@ -10,12 +12,14 @@
 }
 
 .mainContainer{
-    box-shadow: 4px 3px 8px 1px grey;
-    width: 60%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+        display: block;
+        box-shadow: 4px 3px 8px 1px grey;
+        width: 60%;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 15%;
   
 }
 

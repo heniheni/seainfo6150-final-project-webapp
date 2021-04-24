@@ -8,6 +8,8 @@ const News = (props) => {
 
   if (props.news.length) {
     News = (
+      <div>
+      <div><Link className={styles.stylingBreadCrumb} to="/">Home{' >'}</Link><Link className={styles.stylingBreadCrumb} to="/News">News</Link></div>
       <div className={styles.contentDisplay}>
         {props.news.map((news) => (
           <div className={styles.card}>
@@ -30,8 +32,10 @@ const News = (props) => {
               </article>
             </Link>
           </div>
+        
         ))}
       </div>
+    </div>
     );
   } else {
     News = <div>You have no data!</div>;

@@ -2,7 +2,9 @@
 text-align: center;
 margin: 20px;
 }
-
+.stylingBreadCrumb{
+    text-decoration: none;
+}
 .mainNewsContainer{
     text-decoration: none;
     color: black;
@@ -10,6 +12,7 @@ margin: 20px;
 .contentDisplay{
     display: grid;
     grid-template-columns: repeat(3,1fr);  
+    
 }
 .card{
 margin-top: 10px;
@@ -41,6 +44,7 @@ z-index: 1;
    display: flex;
    flex-direction: column;
    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
+   margin-bottom: 5px;
    
  
    /* border: linear-gradient(to right, #f12711, #f5af19); */

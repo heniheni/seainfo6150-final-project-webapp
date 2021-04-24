@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./TeamDetail.module.css";
+import { Link } from "react-router-dom";
 import bcci from "../images/bcci.png";
 
 const TeamDetail = (props) => {
@@ -19,6 +20,7 @@ const TeamDetail = (props) => {
   //const image1 = require(props.team.teamLogoUrl);
   return (
     <div>
+      <Link className={styles.stylingBreadCrumb} to="/">Home{' >'}</Link><Link className={styles.stylingBreadCrumb} to="/Teams">Teams{' >'}</Link><Link className={styles.stylingBreadCrumb} to={props.team.teamReference}>{props.team.tag}</Link>
       <div className={styles.mainContainer}>
         <img
           className={styles.logoStyling}
