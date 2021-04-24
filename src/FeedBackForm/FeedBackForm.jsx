@@ -112,13 +112,14 @@ const Form = () => {
             <input type="radio" name="radio" id="foo-maybe" value="maybe" />
             <br />
             <label >*Name: </label>{" "}
-            <label className={styles.stylingError}>{nameError}</label>
+            <label className={styles.stylingError} >{nameError}</label>
             <br />
             <br />
             <input
               type="text"
               id="name"
               name="name"
+              placeholder="Ella Steel"
               required
               onChange={(e) => validateName(e)}
             />
@@ -131,6 +132,7 @@ const Form = () => {
               type="text"
               id="userEmail"
               name="email"
+              placeholder="ella@outlook.com"
               required
               onChange={(e) => validateEmail(e)}
             />
@@ -141,6 +143,7 @@ const Form = () => {
               type="text"
               id="mobile"
               name="mobile"
+              placeholder="2004001110"
               required
               onChange={(e) => validateMobileNumber(e)}
             />
@@ -164,11 +167,11 @@ const Form = () => {
             <br />
             <label>Zip Code: </label>
             <br />
-            <input type="text" name="zipcode" id="zipcode" />
+            <input type="text" name="zipcode" id="zipcode" placeholder="98121" />
             <br />
             <label>Comments: </label>
             <br />
-            <input type="text" name="comments" id="comments" />
+            <input type="text" name="comments" id="comments" placeholder="Type Here" />
             <br />
             <label>Subscribe for Daily Update: </label>
             <label>Yes</label>

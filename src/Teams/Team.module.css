@@ -1,32 +1,34 @@
 .mainDiv{
     display: grid;
     grid-template-columns: repeat(4,1fr);
- 
     
+  
 } 
-@media (min-width: 300px) {
+
+@media (min-width: 500px) {
     .mainDiv {
         grid-template-columns: repeat(1,1fr);
     }
   }
   
-  @media (min-width: 550px) {
+  @media (min-width: 800px) {
     .mainDiv {
         grid-template-columns: repeat(2,1fr);
     }
   }
-  
-   @media (min-width: 700px) {
+
+  @media (min-width: 1000px) {
     .mainDiv {
         grid-template-columns: repeat(3,1fr);
     }
-  } 
+  }
   
-  @media (min-width: 900px) {
+  
+   @media (min-width: 1300px) {
     .mainDiv {
         grid-template-columns: repeat(4,1fr);
     }
-  }
+  } 
 
 /* .mainDiv{
     display: flex;

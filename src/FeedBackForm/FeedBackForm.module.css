@@ -7,9 +7,11 @@
   margin-top: 10px;
   transform: translate(-50%, -50%);
   padding: 20px;
+ 
 }
 .fields{
   padding: 10px;
+ 
 }
 .formContainer{
     padding: 10px;
@@ -30,6 +32,15 @@ label{
 
 .subText{
     text-align: center;
+}
+::placeholder{
+  color: darkgray;
+  filter: opacity(0.5);
+  padding-left: 10px;
+}
+
+input:focus::placeholder {
+  color: transparent;
 }
 
 hr {
@@ -60,6 +71,8 @@ input[type="text"]{
     border: none;
     background: #f1f1f1;
     margin-right: 15px;
+    border-radius: 10px;
+    
 }
 
 .submitButton {

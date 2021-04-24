@@ -55,6 +55,7 @@ span {
   
 }
 
+
 .playerOneContainer,
 .playerTwoContainer,
 .playerThreeContainer {
@@ -72,6 +73,17 @@ span {
 }
 .playerThreeContainer {
   background: linear-gradient(to right, #0575e6, #021b79);
+}
+
+.playerOneContainer:hover{
+  transform: scale(1.1);
+}
+.playerTwoContainer:hover{
+  transform: scale(1.1);
+}
+
+.playerThreeContainer:hover{
+  transform: scale(1.1);
 }
 
 .awardOneContainer,
