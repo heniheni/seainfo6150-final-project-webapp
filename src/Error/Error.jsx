@@ -7,7 +7,7 @@ const Error = () => {
     return (
         <div className={styles.mainContainer}>
         <div>
-           <img src={pnf} alt="Page Not Found"/>
+           <img className={styles.imgStyle} src={pnf} alt="Page Not Found"/>
         </div>
 
         <div>

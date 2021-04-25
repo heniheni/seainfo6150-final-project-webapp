@@ -8,6 +8,7 @@ exports[`Error tests renders correctly 1`] = `
     <div>
       <img
         alt="Page Not Found"
+        class="imgStyle"
         src="pnf.jpg"
       />
     </div>

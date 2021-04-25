@@ -58,13 +58,13 @@ class ImagesSlide extends Component {
             className={styles.previousButton}
             onClick={this.onClickPreviousButton}
           >
-            Previous
+            {'<'}
           </button>
           <button
             className={styles.forwardButton}
             onClick={this.onClickNextButton}
           >
-            Next
+            {'>'}
           </button>
         </div>
       </div>

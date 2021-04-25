@@ -1,9 +1,30 @@
-.errorRedirectLink{
-font-size: 40px;
+.errorRedirectLink {
+  font-size: 40px;
 }
-.mainContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imgStyle {
+  display: block;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 500px) {
+  .imgStyle {
+    height: 200px;
+  }
+}
+@media (min-width: 800px) {
+  .imgStyle {
+    height: 500px;
+  }
+}
+@media (min-width: 1000px) {
+  .imgStyle {
+    height: 700px;
+  }
 }

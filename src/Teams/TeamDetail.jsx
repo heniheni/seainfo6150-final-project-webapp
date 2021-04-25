@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./TeamDetail.module.css";
 import { Link } from "react-router-dom";
-import bcci from "../images/bcci.png";
+
 
 const TeamDetail = (props) => {
   let SquadList;

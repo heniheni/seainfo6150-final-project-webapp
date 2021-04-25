@@ -12,11 +12,15 @@ exports[`App tests renders correctly 1`] = `
         <nav
           class="navContainer"
         >
-          <img
-            alt="IPL Player Cricket"
-            class="logoBox"
-            src="ipl.png"
-          />
+          <a
+            href="/"
+          >
+            <img
+              alt="IPL Player Cricket"
+              class="logoBox"
+              src="ipl.png"
+            />
+          </a>
           <ul
             class="listControl"
           >
@@ -80,7 +84,7 @@ exports[`App tests renders correctly 1`] = `
           <img
             alt=""
             class="ImageSlider"
-            src="scone.PNG"
+            src="one.jpeg"
           />
            
           <br />
@@ -90,12 +94,12 @@ exports[`App tests renders correctly 1`] = `
             <button
               class="previousButton"
             >
-              Previous
+              &lt;
             </button>
             <button
               class="forwardButton"
             >
-              Next
+              &gt;
             </button>
           </div>
         </div>
@@ -115,7 +119,7 @@ exports[`App tests renders correctly 1`] = `
         >
           <img
             alt="Sport Player First"
-            src="player_one.png"
+            src="https://static.iplt20.com/players/210/41.png"
           />
           <div
             class="awardOneContainer"
@@ -130,20 +134,20 @@ exports[`App tests renders correctly 1`] = `
             class="playerOneInfo"
           >
             <div>
-              Nitish
+              Sikhar
             </div>
             <div>
               <strong
                 class="stylingName"
               >
-                Rana
+                Dhawan
               </strong>
             </div>
             <div>
               <strong
                 class="stylingDigit"
               >
-                137
+                231
               </strong>
             </div>
             <div>
@@ -160,7 +164,7 @@ exports[`App tests renders correctly 1`] = `
         >
           <img
             alt="Sport Player Second"
-            src="player_two.png"
+            src="https://static.iplt20.com/players/210/157.png"
           />
           <div
             class="awardTwoContainer"
@@ -175,20 +179,20 @@ exports[`App tests renders correctly 1`] = `
             class="playerOneInfo"
           >
             <div>
-              Sanju
+              Harshal
             </div>
             <div>
               <strong
                 class="stylingName"
               >
-                Samson
+                Patel
               </strong>
             </div>
             <div>
               <strong
                 class="stylingDigit"
               >
-                6
+                12
               </strong>
             </div>
             <div>
@@ -205,7 +209,7 @@ exports[`App tests renders correctly 1`] = `
         >
           <img
             alt="Sport Player Third"
-            src="player_three.png"
+            src="https://static.iplt20.com/players/210/258.png"
           />
           <div
             class="awardThreeContainer"
@@ -220,13 +224,13 @@ exports[`App tests renders correctly 1`] = `
             class="playerOneInfo"
           >
             <div>
-              Andre
+              Sanju
             </div>
             <div>
               <strong
                 class="stylingName"
               >
-                Russell
+                Samson
               </strong>
             </div>
             <div>
@@ -246,109 +250,19 @@ exports[`App tests renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="playerOneContainer"
+          class="playerFourContainer"
         >
           <img
             alt="Sport Player Fourth"
-            src="player_one.png"
+            src="https://static.iplt20.com/players/210/177.png"
           />
           <div
             class="awardFourContainer"
           >
             <strong
-              class="awardFour"
+              class="awardFourStyling"
             >
               Best Bowling Figures
-            </strong>
-          </div>
-          <div
-            class="playerOneInfo"
-          >
-            <div>
-              Nitish
-            </div>
-            <div>
-              <strong
-                class="stylingName"
-              >
-                Rana
-              </strong>
-            </div>
-            <div>
-              <strong
-                class="stylingDigit"
-              >
-                61
-              </strong>
-            </div>
-            <div>
-              <small
-                class="stylingText"
-              >
-                Score
-              </small>
-            </div>
-          </div>
-        </div>
-        <div
-          class="playerTwoContainer"
-        >
-          <img
-            alt="Sport Player Fifth"
-            src="player_two.png"
-          />
-          <div
-            class="awardFiveContainer"
-          >
-            <strong
-              class="awardFive"
-            >
-              Most Valuable Player
-            </strong>
-          </div>
-          <div
-            class="playerOneInfo"
-          >
-            <div>
-              Sanju
-            </div>
-            <div>
-              <strong
-                class="stylingName"
-              >
-                Samson
-              </strong>
-            </div>
-            <div>
-              <strong
-                class="stylingDigit"
-              >
-                7
-              </strong>
-            </div>
-            <div>
-              <small
-                class="stylingText"
-              >
-                Sixes
-              </small>
-            </div>
-          </div>
-        </div>
-        <div
-          class="playerThreeContainer"
-        >
-          <img
-            alt="Sport Player Sixth"
-            src="player_three.png"
-          />
-          <div
-            class="awardSixContainer"
-          >
-            <strong
-              class="awardSix"
-            >
-              All Rounder
             </strong>
           </div>
           <div
@@ -376,6 +290,51 @@ exports[`App tests renders correctly 1`] = `
                 class="stylingText"
               >
                 Wickets
+              </small>
+            </div>
+          </div>
+        </div>
+        <div
+          class="playerFiveContainer"
+        >
+          <img
+            alt="Sport Player Fifth"
+            src="https://static.iplt20.com/players/210/41.png"
+          />
+          <div
+            class="awardFiveContainer"
+          >
+            <strong
+              class="awardFiveStyling"
+            >
+              Upstox Most Valuable Player
+            </strong>
+          </div>
+          <div
+            class="playerFiveInfo"
+          >
+            <div>
+              Shikhar
+            </div>
+            <div>
+              <strong
+                class="stylingName"
+              >
+                Dhawan
+              </strong>
+            </div>
+            <div>
+              <strong
+                class="stylingDigit"
+              >
+                107.5
+              </strong>
+            </div>
+            <div>
+              <small
+                class="stylingText"
+              >
+                pts
               </small>
             </div>
           </div>
@@ -733,10 +692,13 @@ exports[`App tests renders correctly 1`] = `
       </div>
     </div>
     <footer>
-      Ⓒ 2021 Heni Bhungalia
+      Developed By: 
+      <i>
+        Heni Bhungalia
+      </i>
       <a
         class="footerLink"
-        href="/baz"
+        href="/ContactUs"
       >
         Contact Us
       </a>

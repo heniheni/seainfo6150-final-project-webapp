@@ -13,12 +13,13 @@
 .forwardButton, .previousButton {
     background-color: #19398a;
     color: white;
-    height: 36px;
-    width: 90px;
-    border-radius: 10px;
+   width: 40px;
+   height: 40px;
+    border-radius: 90%;
     margin: 5px;
     font-family: Patua One, sans-serif;
     cursor: pointer;
     outline: none;
+    font-size: 30px;
 }
 

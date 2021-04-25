@@ -6,7 +6,7 @@ exports[`Renders the Image Slider component correctly 1`] = `
     <img
       alt=""
       class="ImageSlider"
-      src="scone.PNG"
+      src="one.jpeg"
     />
      
     <br />
@@ -16,12 +16,12 @@ exports[`Renders the Image Slider component correctly 1`] = `
       <button
         class="previousButton"
       >
-        Previous
+        &lt;
       </button>
       <button
         class="forwardButton"
       >
-        Next
+        &gt;
       </button>
     </div>
   </div>

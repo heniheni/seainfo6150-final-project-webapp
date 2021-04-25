@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./News.module.css";
 import { Link } from "react-router-dom";
-import RCBcover from "../images/RCBcover.jpg";
 
 const News = (props) => {
   let News;
@@ -17,6 +16,7 @@ const News = (props) => {
             News
           </Link>
         </div>
+        <div className={styles.grid}>
         <div className={styles.contentDisplay}>
           {props.news.map((news) => (
             <div className={styles.card}>
@@ -30,21 +30,27 @@ const News = (props) => {
                     src={news.newsImageUrl}
                     alt="News Cover"
                   />
-                  <div className={styles.subTextContainer}>
-                    <h1 className={styles.stylingTitle}>{news.title}</h1>
-
-                    <time
-                      className={styles.stylingDate}
-                      dateTime={news.datetime}
-                    >
-                      {news.datePublished}
-                    </time>
+                  <div className={styles.subMain}>
+                    <div className={styles.subTextContainer}>
+                      <h1 className={styles.stylingTitle}>{news.title}</h1>
+                      <div>
+                        
+                      </div>
+                      <time
+                        className={styles.stylingDate}
+                        dateTime={news.datetime}
+                      >
+                        {news.datePublished}
+                      </time>
+                    </div>
                   </div>
                 </article>
               </Link>
             </div>
           ))}
         </div>
+        </div>
+        
       </div>
     );
   } else {

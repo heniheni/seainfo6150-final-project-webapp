@@ -3,6 +3,26 @@
 exports[`TeamDetail tests renders correctly 1`] = `
 <div>
   <div>
+    <a
+      class="stylingBreadCrumb"
+      href="/"
+    >
+      Home 
+       &gt; 
+    </a>
+    <a
+      class="stylingBreadCrumb"
+      href="/Teams"
+    >
+       Teams
+       &gt; 
+    </a>
+    <a
+      class="stylingBreadCrumb"
+      href="/chennai-super-kings"
+    >
+      CSK
+    </a>
     <div
       class="mainContainer"
     >

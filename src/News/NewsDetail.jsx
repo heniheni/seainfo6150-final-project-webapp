@@ -33,11 +33,13 @@ const NewsDetail = (props) => {
 
           <source 
             media="(max-width: 1000px)"
+            sizes="100px"
             srcSet={props.newsDetail.smallNewsImageUrl + " 800w"}
           />
 
           <source 
             media="(max-width: 2000px)"
+            sizes="100px"
             srcSet={props.newsDetail.newsImageUrl + " 1600w"}
           />
           <img
