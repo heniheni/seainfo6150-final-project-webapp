@@ -73,6 +73,8 @@ margin: 20px;
 }
 .stylingBreadCrumb{
     text-decoration: none;
+    font-weight: bold;
+   
 }
 .listingName{
     margin: 15px;

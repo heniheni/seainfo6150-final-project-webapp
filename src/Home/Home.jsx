@@ -20,20 +20,20 @@ const Home = () => {
       </div>
       <div className={styles.leadersContainer}>
         <div className={styles.playerOneContainer}>
-          <img src={player_one} alt="Sport Player First" />
+          <img src="https://static.iplt20.com/players/210/41.png" alt="Sport Player First" />
           <div className={styles.awardOneContainer}>
             <strong className={styles.awardOne}>Orange Cap</strong>
           </div>
 
           <div className={styles.playerOneInfo}>
-            <div>Nitish</div>
+            <div>Sikhar</div>
 
             <div>
-              <strong className={styles.stylingName}>Rana</strong>
+              <strong className={styles.stylingName}>Dhawan</strong>
             </div>
 
             <div>
-              <strong className={styles.stylingDigit}>137</strong>
+              <strong className={styles.stylingDigit}>231</strong>
             </div>
 
             <div>
@@ -43,20 +43,20 @@ const Home = () => {
         </div>
 
         <div className={styles.playerTwoContainer}>
-          <img src={player_two} alt="Sport Player Second" />
+          <img src="https://static.iplt20.com/players/210/157.png" alt="Sport Player Second" />
           <div className={styles.awardTwoContainer}>
             <strong className={styles.awardTwo}>Purple Cap</strong>
           </div>
 
           <div className={styles.playerOneInfo}>
-            <div>Sanju</div>
+            <div>Harshal</div>
 
             <div>
-              <strong className={styles.stylingName}>Samson</strong>
+              <strong className={styles.stylingName}>Patel</strong>
             </div>
 
             <div>
-              <strong className={styles.stylingDigit}>6</strong>
+              <strong className={styles.stylingDigit}>12</strong>
             </div>
 
             <div>
@@ -66,16 +66,16 @@ const Home = () => {
         </div>
 
         <div className={styles.playerThreeContainer}>
-          <img src={player_three} alt="Sport Player Third" />
+          <img src="https://static.iplt20.com/players/210/258.png" alt="Sport Player Third" />
           <div className={styles.awardThreeContainer}>
             <strong className={styles.awardThree}>Highest Score</strong>
           </div>
 
           <div className={styles.playerOneInfo}>
-            <div>Andre</div>
+            <div>Sanju</div>
 
             <div>
-              <strong className={styles.stylingName}>Russell</strong>
+              <strong className={styles.stylingName}>Samson</strong>
             </div>
 
             <div>
@@ -88,57 +88,11 @@ const Home = () => {
           </div>
         </div>
 
-        <div className={styles.playerOneContainer}>
-          <img src={player_one} alt="Sport Player Fourth" />
+        <div className={styles.playerFourContainer}>
+          <img src="https://static.iplt20.com/players/210/177.png" alt="Sport Player Fourth" />
           <div className={styles.awardFourContainer}>
-            <strong className={styles.awardFour}>Best Bowling Figures</strong>
+            <strong className={styles.awardFourStyling}>Best Bowling Figures</strong>
           </div>
-          <div className={styles.playerOneInfo}>
-            <div>Nitish</div>
-
-            <div>
-              <strong className={styles.stylingName}>Rana</strong>
-            </div>
-
-            <div>
-              <strong className={styles.stylingDigit}>61</strong>
-            </div>
-
-            <div>
-              <small className={styles.stylingText}>Score</small>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.playerTwoContainer}>
-          <img src={player_two} alt="Sport Player Fifth" />
-          <div className={styles.awardFiveContainer}>
-            <strong className={styles.awardFive}>Most Valuable Player</strong>
-          </div>
-
-          <div className={styles.playerOneInfo}>
-            <div>Sanju</div>
-
-            <div>
-              <strong className={styles.stylingName}>Samson</strong>
-            </div>
-
-            <div>
-              <strong className={styles.stylingDigit}>7</strong>
-            </div>
-
-            <div>
-              <small className={styles.stylingText}>Sixes</small>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.playerThreeContainer}>
-          <img src={player_three} alt="Sport Player Sixth" />
-          <div className={styles.awardSixContainer}>
-            <strong className={styles.awardSix}>All Rounder</strong>
-          </div>
-
           <div className={styles.playerOneInfo}>
             <div>Andre</div>
 
@@ -155,6 +109,31 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        <div className={styles.playerFiveContainer}>
+          <img src="https://static.iplt20.com/players/210/41.png" alt="Sport Player Fifth" />
+          <div className={styles.awardFiveContainer}>
+            <strong className={styles.awardFiveStyling}>Upstox Most Valuable Player</strong>
+          </div>
+
+          <div className={styles.playerFiveInfo}>
+            <div>Shikhar</div>
+
+            <div>
+              <strong className={styles.stylingName}>Dhawan</strong>
+            </div>
+
+            <div>
+              <strong className={styles.stylingDigit}>107.5</strong>
+            </div>
+
+            <div>
+              <small className={styles.stylingText}>pts</small>
+            </div>
+          </div>
+        </div>
+
+        
       </div>
       <div>
         <h1 className={styles.pointTableHeaderStyling}>Point Table</h1>

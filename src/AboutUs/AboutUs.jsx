@@ -8,7 +8,7 @@ const ContactUs = (props) => {
     return (
  
         <div>
-          <Link className={styles.stylingBreadCrumb} to="/">Home{' >'}</Link><Link className={styles.stylingBreadCrumb} to="/AboutUs">AboutUs</Link>
+          <Link className={styles.stylingBreadCrumb} to="/">Home {' > '}</Link><Link className={styles.stylingBreadCrumb} to="/AboutUs">AboutUs</Link>
         
       <div className={styles.mainContainer}>
          

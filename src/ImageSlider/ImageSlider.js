@@ -7,13 +7,14 @@ class ImagesSlide extends Component {
     this.onClickNextButton = this.onClickNextButton.bind(this);
     this.onClickPreviousButton = this.onClickPreviousButton.bind(this);
 
-    const image1 = require("../images/scone.PNG");
-    const image2 = require("../images/sctwo.PNG");
-    const image3 = require("../images/scthree.PNG");
+    const image1 = require("../images/one.jpeg");
+    const image2 = require("../images/two.jpeg");
+    const image3 = require("../images/three.jpeg");
+    const image4 = require("../images/four.jpeg");
 
     this.state = {
       index: 0,
-      imageList: [image1, image2, image3],
+      imageList: [image1, image2, image3, image4],
     };
   }
 

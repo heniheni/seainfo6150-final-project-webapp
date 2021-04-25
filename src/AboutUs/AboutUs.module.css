@@ -3,6 +3,7 @@
 }
 .stylingBreadCrumb{
     text-decoration: none;
+    font-weight: bold;
 }
 .contentStyling{
     margin: 20px;

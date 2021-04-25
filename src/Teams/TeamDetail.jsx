@@ -20,7 +20,7 @@ const TeamDetail = (props) => {
   //const image1 = require(props.team.teamLogoUrl);
   return (
     <div>
-      <Link className={styles.stylingBreadCrumb} to="/">Home{' >'}</Link><Link className={styles.stylingBreadCrumb} to="/Teams">Teams{' >'}</Link><Link className={styles.stylingBreadCrumb} to={props.team.teamReference}>{props.team.tag}</Link>
+      <Link className={styles.stylingBreadCrumb} to="/">Home {' > '}</Link><Link className={styles.stylingBreadCrumb} to="/Teams"> Teams{' > '}</Link><Link className={styles.stylingBreadCrumb} to={props.team.teamReference}>{props.team.tag}</Link>
       <div className={styles.mainContainer}>
         <img
           className={styles.logoStyling}

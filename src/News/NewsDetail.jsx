@@ -7,7 +7,17 @@ const NewsDetail = (props) => {
 
   NewsDetailContent = (
     <div>
-       <div><Link className={styles.stylingBreadCrumb} to="/">Home{' >'}</Link><Link className={styles.stylingBreadCrumb} to="/News">News{' >'}</Link><Link className={styles.stylingBreadCrumb} to={props.newsDetail.newsId}>{props.newsDetail.newsId}</Link></div>
+      <div>
+        <Link className={styles.stylingBreadCrumb} to="/">
+          Home {" > "}
+        </Link>
+        <Link className={styles.stylingBreadCrumb} to="/News">
+          News {" > "}
+        </Link>
+        <Link className={styles.stylingBreadCrumb} to={props.newsDetail.newsId}>
+          {props.newsDetail.newsId}
+        </Link>
+      </div>
       <article>
         <div>
           <h1 className={styles.stylingTitle}>{props.newsDetail.title}</h1>
@@ -18,11 +28,25 @@ const NewsDetail = (props) => {
           </div>
         </div>
         <div className={styles.coverContainer}>
+          <picture>
+            
+
+          <source 
+            media="(max-width: 1000px)"
+            srcSet={props.newsDetail.smallNewsImageUrl + " 800w"}
+          />
+
+          <source 
+            media="(max-width: 2000px)"
+            srcSet={props.newsDetail.newsImageUrl + " 1600w"}
+          />
           <img
-            className={styles.stylingNewsCover}
+          className={styles.stylingAltImages}
             src={props.newsDetail.newsImageUrl}
             alt="News Cover"
           />
+          </picture>
+          
         </div>
 
         <div>

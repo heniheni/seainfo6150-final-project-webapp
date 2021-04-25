@@ -17,26 +17,24 @@ tr {
   white-space: nowrap;
   /* margin: 25%; */
   margin-top: 20px;
- 
+
   align-items: center;
   justify-content: center;
-  Overflow-x:scroll;
- 
+  overflow-x: scroll;
 }
 
 .scheduleTable {
-  width:90%; 
-  margin-left:5%; 
-  margin-right:5%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 10px;
 }
 .scheduleTable tr:nth-child(2n) {
   background: #f5f5f5f5;
 }
-.stylingBreadCrumb{
+.stylingBreadCrumb {
   text-decoration: none;
   padding-left: 20px;
-
 }
 span {
   text-align: center;
@@ -49,20 +47,19 @@ span {
 
 .shadowTable {
   box-shadow: 3px 0 2px 0 hsl(0deg 0% 75% / 40%);
-  
 }
 .leadersContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 25px;
   flex-flow: row wrap;
-  
 }
-
 
 .playerOneContainer,
 .playerTwoContainer,
-.playerThreeContainer {
+.playerThreeContainer,
+.playerFourContainer,
+.playerFiveContainer {
   border-radius: 10px;
   box-shadow: 0 2px 6px 0 rgb(0 0 0 / 10%);
   margin-bottom: 25px;
@@ -78,15 +75,49 @@ span {
 .playerThreeContainer {
   background: linear-gradient(to right, #0575e6, #021b79);
 }
+.playerFourContainer {
+  background: linear-gradient(to right, #da4453, #89216b);
+}
+.awardFourStyling {
+  background-color: #da4453;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+}
+.playerFiveContainer {
+  background: linear-gradient(to right, #00b4db, #0083b0);
+}
+.awardFiveStyling {
+  background-color: #00b4db;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+}
 
-.playerOneContainer:hover{
+.playerFiveInfo {
+  background-color: white;
+  text-align: center;
+}
+.playerOneContainer:hover {
   transform: scale(1.1);
 }
-.playerTwoContainer:hover{
+.playerTwoContainer:hover {
   transform: scale(1.1);
 }
 
-.playerThreeContainer:hover{
+.playerThreeContainer:hover {
+  transform: scale(1.1);
+}
+.playerFourContainer:hover{
+  transform: scale(1.1);
+}
+.playerFiveContainer:hover{
   transform: scale(1.1);
 }
 
@@ -102,7 +133,7 @@ span {
 
 .awardTwoContainer,
 .awardFiveContainer {
-  background-color: #8e2de2;
+  /* background-color: #8e2de2; */
 
   height: 30px;
   display: flex;

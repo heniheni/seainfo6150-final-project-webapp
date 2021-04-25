@@ -1,48 +1,47 @@
-.stylingTitle{
-    text-align: center;
-    font-size: 40px;
-    margin: 20px;
+.stylingTitle {
+  text-align: center;
+  font-size: 40px;
+  margin: 20px;
 }
-.stylingBreadCrumb{
-    text-decoration: none;
+.stylingBreadCrumb {
+  text-decoration: none;
+  font-weight: bold;
 }
-.stylingDate{
-    text-align: center;
-    font-style: italic;
-    font-size: 20px;
+.stylingDate {
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
 }
-.stylingNewsCover{
-    background-size: cover;
-    width: 50%;
-   
-    
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-   
+.stylingNewsCover {
+  background-size: cover;
+  
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+ .stylingAltImages{
+    height: 550px;
+} 
 
-    
+.coverContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.coverContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.shortTextStyling {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  font-weight: lighter;
+  margin: 10px;
 }
-.shortTextStyling{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-style: italic;
-    font-weight: lighter;
-    margin: 10px;
-   
+.contentStyling {
+  max-width: 800px;
+  text-align: justify;
 }
-.contentStyling{
-    max-width: 800px;
-    text-align: justify;
-}
-.contentContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

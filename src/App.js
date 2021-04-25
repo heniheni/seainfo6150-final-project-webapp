@@ -32,7 +32,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       // performs a GET request
-      const response = await fetch("http://localhost:8000/teams");
+      const response = await fetch("https://6084c8d19b2bed0017041479.mockapi.io/teams");
       const responseJson = await response.json();
       setFetchedData(responseJson);
     };
@@ -43,7 +43,7 @@ function App() {
 
     const fetchNews = async () => {
       // performs a GET request
-      const responseNews = await fetch("http://localhost:8000/News");
+      const responseNews = await fetch("https://6084c8d19b2bed0017041479.mockapi.io/news");
       const responseNewsJson = await responseNews.json();
       setFetchedNews(responseNewsJson);
     };
