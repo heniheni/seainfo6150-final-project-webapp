@@ -32,7 +32,9 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       // performs a GET request
-      const response = await fetch("https://6084c8d19b2bed0017041479.mockapi.io/teams");
+      const response = await fetch(
+        "https://6084c8d19b2bed0017041479.mockapi.io/teams"
+      );
       const responseJson = await response.json();
       setFetchedData(responseJson);
     };
@@ -43,7 +45,9 @@ function App() {
 
     const fetchNews = async () => {
       // performs a GET request
-      const responseNews = await fetch("https://6084c8d19b2bed0017041479.mockapi.io/news");
+      const responseNews = await fetch(
+        "https://6084c8d19b2bed0017041479.mockapi.io/news"
+      );
       const responseNewsJson = await responseNews.json();
       setFetchedNews(responseNewsJson);
     };
@@ -58,7 +62,13 @@ function App() {
       <div className={styles.headerContainer}>
         <header>
           <nav className={styles.navContainer}>
-          <Link to="/"><img className={styles.logoBox} src={ipl} alt="IPL Player Cricket"/></Link>
+            <Link to="/">
+              <img
+                className={styles.logoBox}
+                src={ipl}
+                alt="IPL Player Cricket"
+              />
+            </Link>
 
             {/* <div  className={styles.menuContainer}> */}
             <ul className={styles.listControl}>
@@ -112,7 +122,11 @@ function App() {
             path={`/newsDetail/:newsId`}
             render={({ match }) => {
               return fetchedNews ? (
-                <NewsDetail newsDetail={fetchedNews[match.params.newsId]} />
+                fetchedNews[match.params.newsId] ? (
+                  <NewsDetail newsDetail={fetchedNews[match.params.newsId]} />
+                ) : (
+                  <Error />
+                )
               ) : null;
             }}
           ></Route>
@@ -164,7 +178,11 @@ function App() {
               // getting the parameters from the url and passing
               // down to the component as props
               return fetchedData ? (
-                <TeamDetail team={fetchedData[match.params.teamReference]} />
+                fetchedData[match.params.teamReference] ? (
+                  <TeamDetail team={fetchedData[match.params.teamReference]} />
+                ) : (
+                  <Error />
+                )
               ) : null;
             }}
           />
@@ -173,7 +191,7 @@ function App() {
         </Switch>
       </div>
       <footer>
-        Developed By: <i>Heni Bhungalia</i> 
+        Developed By: <i>Heni Bhungalia</i>
         <Link className={styles.footerLink} to="/ContactUs">
           Contact Us
         </Link>
